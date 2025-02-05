@@ -1,0 +1,70 @@
+[
+    {
+
+      "storeType": "Grocery",
+      "status": "Active",
+      "noOfStores": "2"
+    },
+    {
+     
+      "storeType": "Crockery",
+      "status": "Inactive",
+      "noOfStores": "5"
+    },
+    {
+      
+      "storeType": "Restaurant",
+      "status": "Active",
+      "noOfStores": "1"
+    },
+    {
+      
+      "storeType": "Gifts Items",
+      "status": "Active",
+      "noOfStores": "3"
+    },
+    {
+      
+      "storeType": "Textiles",
+      "status": "Inactive",
+      "noOfStores": "4"
+    },
+    {
+     
+      "storeType": "XXXXXXXXX",
+      "status": "Active",
+      "noOfStores": "2"
+    },
+    {
+     
+      "storeType": "XXXXXXXXX",
+      "status": "Inactive",
+      "noOfStores": "1"
+    },
+    {
+     
+      "storeType": "XXXXXXXXX",
+      "status": "Inactive",
+      "noOfStores": "3"
+      
+    },
+    {
+     
+      "storeType": "XXXXXXXXX",
+      "status": "Inactive",
+      "noOfStores": "5"
+    },
+    {
+     
+      "storeType": "XXXXXXXX",
+      "status": "Active",
+      "noOfStores": "10"
+    },
+    {
+     
+      "storeType": "XXXXXXXXX",
+      "status": "Active",
+      "noOfStores": "12"
+    }
+  ]
+  

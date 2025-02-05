@@ -1,0 +1,92 @@
+[
+    {
+        "productCategory": "Pizza",
+        "storeName": "Restaurant",
+        "productVariant": "Large",
+        "productName": "Cheese Burst Pizza",
+        "status": "In Stock",
+        "regularPrice": "$20",
+        "description": "This pizza contains a bit extra cheese than the normal one",
+        "actions": ""
+    },
+    {
+        "productCategory": "Burger",
+        "storeName": "Restaurant",
+        "productVariant": "Medium",
+        "productName": "Cheese Burger",
+        "status": "Low Stock",
+        "regularPrice": "$13",
+        "description": "This burger contains cheese and sauce with aloo tikki",
+        "actions": ""
+    },
+    {
+        "productCategory": "Sandwich",
+        "storeName": "Restaurant",
+        "productVariant": "Large",
+        "productName": "Grilled Sandwich",
+        "status": "In Stock",
+        "regularPrice": "$12",
+        "description": "This sandwich has a special fan following",
+        "actions": ""
+    },
+    {
+        "productCategory": "Sandwich",
+        "storeName": "Restaurant",
+        "productVariant": "Small",
+        "productName": "Cheese Sandwich",
+        "status": "Out of Stock",
+        "regularPrice": "$10",
+        "description": "This sandwich is stuffed with cheese",
+        "actions": ""
+    },
+    {
+        "productCategory": "Omlette",
+        "storeName": "Restaurant",
+        "productVariant": "Full",
+        "productName": "Egg Omlette",
+        "status": "In Stock",
+        "regularPrice": "$8",
+        "description": "This omlette contains two eggs",
+        "actions": ""
+    },
+    {
+        "productCategory": "Drinks",
+        "storeName": "Restaurant",
+        "productVariant": "Large",
+        "productName": "Mint Mojito",
+        "status": "Low Stock",
+        "regularPrice": "$10",
+        "description": "This mojito contains lemon with mint leaf",
+        "actions": ""
+    },
+    {
+        "productCategory": "Thali",
+        "storeName": "Restaurant",
+        "productVariant": "Full",
+        "productName": "Indian Full",
+        "status": "In Stock",
+        "regularPrice": "$16",
+        "description": "This thali contains 4 pieces of chapati and 2 sabji",
+        "actions": ""
+    },
+    {
+        "productCategory": "Dosa",
+        "storeName": "Restaurant",
+        "productVariant": "Large",
+        "productName": "Masala Dosa",
+        "status": "In Stock",
+        "regularPrice": "$18",
+        "description": "This dosa contains potato masala",
+        "actions": ""
+    },
+    {
+        "productCategory": "Idli",
+        "storeName": "Restaurant",
+        "productVariant": "Half",
+        "productName": "Idli",
+        "status": "Out of Stock",
+        "regularPrice": "$14",
+        "description": "A half plate of idli comes with 2 pieces ",
+        "actions": ""
+    }
+]

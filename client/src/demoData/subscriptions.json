@@ -1,0 +1,103 @@
+[
+    {
+
+      "storeName": "Grocery",
+      "users": "John",
+      "status": "Active",
+      "plan": "Basic",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+     
+      "storeName": "Crockery",
+      "users": "David",
+      "status": "Inactive",
+      "plan": "Free",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+      
+      "storeName": "Restaurant",
+      "users": "Khush",
+      "status": "Active",
+      "plan": "Prime",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+      
+      "storeName": "Gifts Items",
+      "users": "Rajesh",
+      "status": "Active",
+      "plan": "Premium",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+      
+      "storeName": "Textiles",
+      "users": "Michael",
+      "status": "Inactive",
+      "plan": "Free",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+     
+      "storeName": "XXXXXXXXX",
+      "users": "Tom",
+      "status": "Active",
+      "plan": "Basic",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+     
+      "storeName": "XXXXXXXXX",
+      "users": "Tim",
+      "status": "Inactive",
+      "plan": "Free",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+     
+      "storeName": "XXXXXXXXX",
+      "users": "Jeff",
+      "status": "Inactive",
+      "plan": "Free",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+      
+    },
+    {
+     
+      "storeName": "XXXXXXXXX",
+      "users": "Melcom",
+      "status": "Inactive",
+      "plan": "Basic",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+     
+      "storeName": "XXXXXXXX",
+      "users": "Oliver",
+      "status": "Active",
+      "plan": "Prime",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    },
+    {
+     
+      "storeName": "XXXXXXXXX",
+      "users": "Carlos",
+      "status": "Active",
+      "plan": "Prime",
+      "startDate": "22/10/2021",
+      "endDate": "21/10/2022"
+    }
+  ]
+  

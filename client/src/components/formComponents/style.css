@@ -1,0 +1,163 @@
+.dragMain {
+	display: flex;
+    justify-content:space-between;
+    flex-flow: row wrap;
+}
+#div {
+  width: 20%;
+  height: 100%;
+}
+div#myDIV {
+    padding: 10px;
+    background: #ededed;
+}
+#div1 {
+  width: 50%;
+  height: 800px;
+  padding: 10px;
+  border: 1px solid #AAAAAA;
+}
+#div2 {
+  width: 20%;
+    height: 100%;
+    padding: 10px;
+}
+.dropable {
+  height: auto;
+  padding: 10px;
+  min-height:50px;
+  margin-bottom: 10px;
+  border: 2px dotted #AAAAAA;
+}
+img#drag1 {
+    width: 100%;
+	border: 2px dotted #AAAAAA;
+    padding: 1px;
+}
+.mainBlocks p{
+margin:0;
+}
+.mainBlocks {
+    display: flex;
+	align-items: center;
+}
+.mainBlocks h1 {
+    margin: 0;
+    font-size: 20px;
+    margin-right: 10px;
+}
+.mainBlocks i {
+    margin-right: 10px;
+}
+.mb{
+margin: 10px 0 10px 0; 
+border: 1px dotted grey;
+padding: 10px;
+}
+.iconPlus {
+    text-align: center;
+    margin: 15px 0 15px 0;
+}
+.iconPlus i {
+    font-size: 40px;
+	cursor: pointer;
+    color: #e3e3e3;
+}
+.reqField {
+    display: flex;
+    justify-content: left;
+   margin-bottom: 20px;
+}
+.reqField p,.reqField h4 {
+    margin: 0;
+}
+.leftTitle {
+    width: 30%;
+}
+.typeFields input {
+    border: none;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    width: 100%;
+	outline: 0;
+}
+input[type="checkbox"] {
+    width: auto;
+}
+.typeFields {
+    width: 70%;
+    text-align: left;
+}
+.typeFields select {
+    border: none;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    width: 100%;
+	outline: 0;
+}
+.typeFields textarea {
+    border: none;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    width: 92%;
+	outline: 0;
+}
+div#myDIV:hover {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 0 8px rgba(102,175,233,.6);
+}
+.typeFields input:active {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 0 8px rgba(102,175,233,.6);
+}
+.typeFields textarea:active {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 0 8px rgba(102,175,233,.6);
+}
+.typeFields select:active {
+    border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 0 8px rgba(102,175,233,.6);
+}
+.active, .typeFields:hover {
+   border-color: #66afe9;
+    outline: 0;
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.1), 0 0 8px rgba(102,175,233,.6);
+}
+.typeFields .optionValue {
+    border: none;
+    border-radius: 3px;
+    outline: 0;
+    display: flex;
+    justify-content: left;
+	margin-top: 15px;
+}
+.optionCheck{
+    width: 10%;
+    margin-top: 10px;  
+    } 
+	.optionInput1{
+	 width: 33%;
+	}
+	 .optionInput2{
+	width: 33%;
+    margin-left: 20px;
+	}
+	.typeFields div#myList {
+    width: 100%;
+	margin-top: 15px;
+}
+div#headertext input {
+    width: 30%;
+    background: #fff;
+    padding: 10px 10px 10px 10px;
+    border-radius: 3px;
+    outline: 0;
+    border: 1px solid grey;
+}

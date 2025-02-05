@@ -1,0 +1,155 @@
+[
+    {
+        "customerId": "#01-0200",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0201",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0202",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Inactive"
+    },
+    {
+        "customerId": "#01-0203",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0204",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Inactive"
+    },
+    {
+        "customerId": "#01-0205",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Inactive"
+    },
+    {
+        "customerId": "#01-0206",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0207",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0208",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0209",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Inactive"
+    },
+    {
+        "customerId": "#01-0210",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0210",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0212",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0213",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Inactive"
+    },
+    {
+        "customerId": "#01-0214",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Inactive"
+    },
+    {
+        "customerId": "#01-0215",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    },
+    {
+        "customerId": "#01-0216",
+        "customerName": "Matthew Morris",
+        "joinDate": "25/10/2021",
+        "email": "matmor@gmail.com",
+        "location": "Edinburgh, UK",
+        "totalSpent": "$1250.89",
+        "status": "Active"
+    }
+]

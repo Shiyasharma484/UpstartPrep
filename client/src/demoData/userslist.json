@@ -1,0 +1,142 @@
+[
+  {
+    "usersName": "Duran Clayton",
+    "email": "duranclayton@hotmail.co.uk",
+    "phone": "+44 2354123545",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Steve Jobs",
+    "email": "stevejobs@hotmail.co.uk",
+    "phone": "+44 4530756980",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Active"
+  },
+  {
+    "usersName": "Steve Jacob",
+    "email": "stevejacob@hotmail.co.uk",
+    "phone": "+44 4532012489",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Jacob Holmes",
+    "email": "jacobholmes@hotmail.co.uk",
+    "phone": "+44 2013467892",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Active"
+  },
+  {
+    "usersName": "Edward Cullen",
+    "email": "marlamento@hotmail.co.uk",
+    "phone": "+44 1023657089",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Marla Mento",
+    "email": "marlamento@hotmail.co.uk",
+    "phone": "+44 5897201634",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Female",
+    "dob": "20/05/1970",
+    "status": "Active"
+  },
+  {
+    "usersName": "Jose Mark",
+    "email": "josemark@hotmail.co.uk",
+    "phone": "+44 5624980371",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Martha Haydon",
+    "email": "marthahaydon@hotmail.co.uk",
+    "phone": "+44 1230507819",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Female",
+    "dob": "20/05/1970",
+    "status": "Active"
+  },
+  {
+    "usersName": "Matthew Haydon",
+    "email": "matthewhaydon@hotmail.co.uk",
+    "phone": "+44 5623480196",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Adam Gilchrist",
+    "email": "adamgilchrist@hotmail.co.uk",
+    "phone": "+44 5982347601",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Active"
+  },
+  {
+    "usersName": "Nathan Johnson",
+    "email": "marthajohnson@hotmail.co.uk",
+    "phone": "+44 4321878650",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Steve Johnson",
+    "email": "stevejohnson@hotmail.co.uk",
+    "phone": "+44 8860005493",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Active"
+  },
+  {
+    "usersName": "Barbara Mori",
+    "email": "barbaramori@hotmail.co.uk",
+    "phone": "+44 ",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Female",
+    "dob": "20/05/1970",
+    "status": "Inactive"
+  },
+  {
+    "usersName": "Edward Johns",
+    "email": "edwardjohns@hotmail.co.uk",
+    "phone": "+44 5",
+    "address": "2450, Brendford, UK",
+    "addressType": "Home",
+    "gender": "Male",
+    "dob": "20/05/1970",
+    "status": "Active"
+  }
+]

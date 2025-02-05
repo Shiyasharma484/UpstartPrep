@@ -1,0 +1,85 @@
+/* .Board { */
+  /* height: 92%; */
+  /* display: block;
+  overflow-x: auto;
+  background-color: #23395d;
+} */
+
+.Add-List {
+  width: 272px;
+  margin: 10px;
+  flex-shrink: 0;
+}
+
+.Add-List-Button {
+  background-color: rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  cursor: pointer;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  min-height: 32px;
+  padding: 5px 8px;
+  transition: background-color 85ms ease-in, opacity 40ms ease-in,
+    border-color 85ms ease-in;
+  height: fit-content;
+}
+
+.Add-List-Button:hover {
+  background-color: rgba(0, 0, 0, 0.24);
+}
+
+.Add-List-Button ion-icon {
+  margin-right: 1px;
+}
+.Header select {
+  color: black;
+  font-size: 18px;
+}
+.monthOption {
+  text-align: left;
+  position: absolute;
+  margin-left: 11px;
+  margin-top: -53px !important;
+}
+.monthOption select {
+  background: #dfe3e6;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.YearOption {
+  text-align: left;
+  position: absolute;
+  margin-left: 160px;
+  margin-top: -7px !important;
+}
+.YearOption select {
+  background: #dfe3e6;
+  padding: 10px;
+  border-radius: 8px;
+  outline: none;
+  border: none;
+}
+.schedule-btnAdd {
+  width: 120px;
+  text-align: center;
+  justify-content: center;
+}
+.BordAdd-List {
+  float: left;
+}
+.weeksName {
+  display: flex;
+  justify-content: space-around;
+  background: #23395d;
+  color: #fff;
+  border-bottom: 2px solid #fff;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+.weeksDays {
+  width: 10%;
+  float: left;
+}

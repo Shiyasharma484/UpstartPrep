@@ -1,0 +1,84 @@
+[
+  {
+    "addUsersRole": "Dashboard",
+    "users": "1",
+    "granted": "10",
+    "description":"Ecommerce"
+  },
+  {
+    "addUsersRole": "Dash Users",
+    "users": "2",
+    "granted": "8",
+    "description": "Add User, Users List, User Roles, User Permission "
+  },
+  {
+    "addUsersRole": "Stores",
+    "users": "2",
+    "granted": "5"
+  },
+  {
+    "addUsersRole": "Orders",
+    "users": "4",
+    "granted": "2"
+  },
+  {
+    "addUsersRole": "Payments",
+    "users": "3",
+    "granted": "3"
+  },
+  {
+    "addUsersRole": "Invoices",
+    "users": "3",
+    "granted": "2"
+  },
+  {
+    "addUsersRole": "Products",
+    "users": "5",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Categories",
+    "users": "3",
+    "granted": "2"
+  },
+  {
+    "addUsersRole": "Reports",
+    "users": "3",
+    "granted": "2"
+  },
+  {
+    "addUsersRole": "Settings",
+    "users": "3",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Store Module",
+    "users": "3",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Subscription",
+    "users": "3",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Customers",
+    "users": "3",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Delivery Partners",
+    "users": "3",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Tickets",
+    "users": "3",
+    "granted": "2"
+  },
+    {
+    "addUsersRole": "Offers",
+    "users": "3",
+    "granted": "2"
+  }
+]

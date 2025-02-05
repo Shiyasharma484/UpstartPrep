@@ -1,0 +1,71 @@
+[
+    {
+      "storeName": "Bhaina Da Dhaba",
+      "storeType": "Restaurant",
+      "status": "Active",
+      "ratings": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "storeName": "Ishu Crockery",
+      "storeType": "Crockery",
+      "status": "Inactive",
+      "ratings": "⭐⭐⭐⭐"
+      
+    },
+    {
+      "storeName": "Guru Sweets",
+      "storeType": "Restaurant",
+      "status": "Active",
+      "ratings": "⭐⭐⭐⭐"
+    },
+    {
+      "storeName": "Chawla Gift Gallery",
+      "storeType": "Gifts Items",
+      "status": "Active",
+      "ratings": "⭐⭐⭐"
+    },
+    {
+      "storeName": "Chinar Suiting and Shirting",
+      "storeType": "Textiles",
+      "status": "Inactive",
+      "ratings": "⭐⭐⭐⭐⭐"
+    },
+    {
+      "storeName": "XXXXXXXXX",
+      "storeType": "XXXXXXXXX",
+      "status": "Active",
+      "ratings": "⭐⭐⭐"
+    },
+    {
+      "storeName": "XXXXXXXXX",
+      "storeType": "XXXXXXXXX",
+      "status": "Inactive",
+      "ratings": "⭐⭐⭐⭐"
+    },
+    {
+      "storeName": "XXXXXXXXX",
+      "storeType": "XXXXXXXXX",
+      "status": "Inactive",
+      "ratings": "⭐⭐⭐"
+      
+    },
+    {
+        "storeName": "XXXXXXXXX",
+      "storeType": "XXXXXXXXX",
+      "status": "Inactive",
+      "ratings": "⭐⭐⭐⭐"
+    },
+    {
+        "storeName": "XXXXXXXXX",
+      "storeType": "XXXXXXXX",
+      "status": "Active",
+      "ratings": "⭐⭐⭐"
+    },
+    {
+        "storeName": "XXXXXXXXX",
+      "storeType": "XXXXXXXXX",
+      "status": "Active",
+      "ratings": "⭐⭐⭐"
+    }
+  ]
+  

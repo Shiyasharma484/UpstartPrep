@@ -1,0 +1,86 @@
+Listen on port 8000
+Connected to MySQL Server!
+ WHERE access_token='hjskdhskjdhsjkdhskjdhskjdhskdhskjdhsdjksjhdsjkdsdks'
+SELECT * FROM users WHERE access_token='hjskdhskjdhsjkdhskjdhskjdhskdhskjdhsdjksjhdsjkdsdks'
+[
+  {
+    id: 93,
+    first_Name: 'abcd',
+    middle_Name: null,
+    last_Name: 'singh',
+    nick_name: null,
+    phone: '2344100000',
+    phone_verify: 0,
+    password: '$2b$10$jg0vW216CK/Fay3mC2R3BeReyimFUyBwq.i7kRAcYDzR2vOEAZgpq',
+    email: 'tth@mailinator.com',
+    email_verify: 0,
+    verification_code: '612931',
+    media_type: null,
+    token_id: null,
+    device_id: null,
+    access_token: 'hjskdhskjdhsjkdhskjdhskjdhskdhskjdhsdjksjhdsjkdsdks',
+    access_token_expires_in: 'Fri Mar 03 2023 20:40:05 GMT+0530',
+    refresh_token: 'd6a309d771580aeba8d6684c5fd75b4b',
+    refresh_token_expires_in: 'Sun Mar 03 2024 19:40:05 GMT+0530',
+    address_line1: null,
+    address_line2: null,
+    city: null,
+    state: null,
+    country: null,
+    postal_code: null,
+    image: null,
+    gender: null,
+    date_of_birth: null,
+    ipaddress: null,
+    slug: null,
+    active: 1,
+    trash: 0,
+    description: null,
+    created_at: '2023-03-03T13:52:43.000Z',
+    updated_at: '2023-05-15T07:57:25.000Z'
+  }
+]
+Query Success - sql_query HELPER
+promise done - sql_query HELPER
+ WHERE access_token='hjskdhskjdhsjkdhskjdhskjdhskdhskjdhsdjksjhdsjkdsdks'
+SELECT * FROM users WHERE access_token='hjskdhskjdhsjkdhskjdhskjdhskdhskjdhsdjksjhdsjkdsdks'
+[
+  {
+    id: 93,
+    first_Name: 'abcd',
+    middle_Name: null,
+    last_Name: 'singh',
+    nick_name: null,
+    phone: '2344100000',
+    phone_verify: 0,
+    password: '$2b$10$jg0vW216CK/Fay3mC2R3BeReyimFUyBwq.i7kRAcYDzR2vOEAZgpq',
+    email: 'tth@mailinator.com',
+    email_verify: 0,
+    verification_code: '612931',
+    media_type: null,
+    token_id: null,
+    device_id: null,
+    access_token: 'hjskdhskjdhsjkdhskjdhskjdhskdhskjdhsdjksjhdsjkdsdks',
+    access_token_expires_in: 'Fri Mar 03 2023 20:40:05 GMT+0530',
+    refresh_token: 'd6a309d771580aeba8d6684c5fd75b4b',
+    refresh_token_expires_in: 'Sun Mar 03 2024 19:40:05 GMT+0530',
+    address_line1: null,
+    address_line2: null,
+    city: null,
+    state: null,
+    country: null,
+    postal_code: null,
+    image: null,
+    gender: null,
+    date_of_birth: null,
+    ipaddress: null,
+    slug: null,
+    active: 1,
+    trash: 0,
+    description: null,
+    created_at: '2023-03-03T13:52:43.000Z',
+    updated_at: '2023-05-15T07:57:25.000Z'
+  }
+]
+Query Success - sql_query HELPER
+promise done - sql_query HELPER

@@ -1,0 +1,51 @@
+[
+  {
+    "roleTitle": "Main Admin",
+    "userRole": "Super Admin",
+    "storeType": "Restaurant",
+    "users": "1",
+    "granted": "10"
+  },
+  {
+    "roleTitle": "Store Admin",
+    "userRole": "Admin",
+    "storeType": "Crockery",
+    "users": "2",
+    "granted": "8"
+  },
+  {
+    "roleTitle": "Store Manager",
+    "userRole": "Manager",
+    "storeType": "Courier Store",
+    "users": "2",
+    "granted": "5"
+  },
+  {
+    "roleTitle": "Customer Support",
+    "userRole": "Support",
+    "storeType": "Courier Store",
+    "users": "4",
+    "granted": "2"
+  },
+  {
+    "roleTitle": "SEO",
+    "userRole": "SEO",
+    "storeType": "Press",
+    "users": "3",
+    "granted": "3"
+  },
+  {
+    "roleTitle": "Content Writer",
+    "userRole": "Content Writer",
+    "storeType": "Restaurant",
+    "users": "3",
+    "granted": "2"
+  },
+  {
+    "roleTitle": "Demo",
+    "userRole": "Demo Role",
+    "storeType": "Demo",
+    "users": "5",
+    "granted": "2"
+  }
+]

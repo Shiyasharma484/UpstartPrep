@@ -1,0 +1,2275 @@
+/* Home First Section */
+.topmenudesign .header-main-right .pass-link {
+  background: #27374c !important;
+  padding: 6px 20px 6px 20px;
+  color: #fff;
+  border-radius: 50px;
+}
+.pass-link img {
+  width: 70px !important;
+}
+.home-spacing .mainSpace {
+  background: #fafaff;
+}
+.header-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 29px;
+  width: 1700px;
+  margin: 0 auto;
+}
+.header-main-right .pass-link:hover {
+  border: 1px solid #22374e;
+  color: #fff !important;
+}
+.header-main-left {
+  border-right: 3px solid #27374c;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding-right: 35px;
+}
+.header-main-right .pass-link {
+  background: linear-gradient(105.69deg, #eab308 0%, #ef4444 43.23%);
+  color: #fff;
+  padding: 7px 24px;
+  border-radius: 4px;
+  font-weight: 600;
+  border: 1px solid #fff;
+}
+
+.header-nav a {
+  color: #27374c;
+  padding-left: 30px;
+  font-size: 16px;
+  font-weight: 600;
+}
+.home-container {
+  margin: 0 auto;
+}
+.NewHomeMainDiv {
+  position: relative;
+  margin-top: 50px;
+}
+.NewHomeMainDiv h1 {
+  font-size: 70px;
+  line-height: normal;
+  color: #fff;
+}
+.NewHomeMainDiv-inner {
+  padding: 90px;
+  position: absolute;
+  top: 70px;
+}
+.sectionSecond-inner {
+  position: relative;
+  top: 80px;
+}
+.NewHomeMainDiv-inner-p {
+  font-size: 25px;
+  font-weight: 500;
+}
+button.ant-btn.JoinBtn {
+  background: #28384e;
+  padding: 10px 30px 10px 30px;
+  color: #fff;
+  font-size: 20px;
+  height: auto;
+  margin-right: 20px;
+  border-radius: 50px;
+  border: 2px solid #fff;
+  outline: 2px solid #4098ff;
+  box-shadow: #4098ff 0px 0px 17px;
+}
+button.ant-btn.JoinBtn:hover {
+  background: transparent;
+  border: 2px solid #27374c;
+  color: #27374c;
+}
+button.ant-btn.ScheduleBtn {
+  padding: 10px 15px 10px 15px;
+  color: #27374c;
+  font-size: 20px;
+  height: auto;
+  border-radius: 50px;
+  background: rgb(252, 194, 87);
+  border: 2px solid #fff;
+  outline: 2px solid rgb(252, 194, 87);
+  box-shadow: rgb(252, 194, 87) 0px 0px 17px;
+}
+button.ant-btn.ScheduleBtn:hover {
+  background: transparent;
+  border: 2px solid rgb(252, 194, 87);
+  color: rgb(252, 194, 87);
+}
+.NewHomeMainDiv-inner-btns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+/* .sectionThirdHome-Main{
+  background-image: url('../img/Home/tutoring-service-bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+} */
+/* Home First Section End*/
+/* Tutoring Services Section */
+.header-main-right .pass-link:hover {
+  color: #ffff !important;
+}
+.tutoring-service {
+  overflow: hidden;
+}
+.tutoring-service button {
+  background-color: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 7px 16px;
+  font-size: 15px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.tutoring-service button:hover {
+  border-bottom: 3px solid #27374c;
+}
+.tutoring-service button.active {
+  border-bottom: 3px solid #27374c;
+}
+.Tutoringcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+.tutoring-title {
+  text-align: center;
+}
+.tutoring-service {
+  text-align: center;
+}
+.tutoring-title {
+  text-align: center;
+  font-size: 50px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  color: #27374c;
+}
+.tutoring-service-main {
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
+  border-top: 3px solid #f1f0f0;
+  padding: 30px 0 0 0;
+}
+.Tutoringcontent {
+  padding: 20px 0 20px 0;
+}
+.Tutoringcontent1 {
+  background-image: url(../img/Home/tutoring-service-bg.png);
+  background-position: center;
+  background-size: cover;
+}
+.Tutoringdata-txt1 p {
+  margin-bottom: 5px;
+}
+.Tutoringdata-txt1 {
+  padding: 0 20px 0 20px;
+}
+.ant-row.sectionThirdHomeRow {
+  display: flex;
+  text-align: left;
+}
+.Tutoringdata img {
+  width: 90%;
+}
+.Tutoringdata {
+  text-align: center;
+}
+.Tutoringdata p {
+  font-size: 18px;
+  font-weight: 600;
+  margin-top: 15px;
+}
+.NewHomeMainDiv img {
+  width: 100%;
+}
+/* Tutoring Services Section End */
+.Tutoringdata-sec img {
+  width: 160px;
+}
+.Tutoringdata2 {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  top: -50px;
+  left: 40px;
+}
+.Tutoringdata-txt1 {
+  padding: 0 20px 0 40px;
+  position: relative;
+  z-index: 1;
+}
+.Tutoringdata-txt1 img {
+  position: absolute;
+  z-index: -1;
+  width: 200px;
+}
+p.Tutoringdata-txt2 {
+  font-size: 17px;
+  color: #525d87;
+  font-weight: 600;
+}
+.Tutoringdata-txt1 p:nth-child(3) {
+  font-size: 24px;
+  font-weight: 600;
+  line-height: 27px;
+  margin-bottom: 10px;
+}
+.Tutoringdata-txt1 button {
+  cursor: pointer;
+  background: #fff;
+  padding: 5px 20px 5px 20px;
+  border-radius: 50px;
+  border: 3px solid #000;
+  color: #27374c;
+}
+/* Third  Section Start */
+.sectionThirdHome-fluid {
+  background-image: url(../img/Home/modern-solution-bg.png);
+  background-size: cover;
+  background-position: center;
+  padding: 60px 0 170px 0;
+}
+.sectionThirdHome-Main {
+  padding: 60px 0 70px 0;
+}
+.firstlearningDiv {
+  margin-top: 40px;
+}
+.firstlearningDiv p {
+  font-size: 39px;
+  font-weight: 600;
+}
+.firstlearningDiv button.ant-btn {
+  background: #fff;
+  border: 2px solid #27374c;
+  height: auto;
+  padding: 10px 20px 10px 20px;
+  border-radius: 30px;
+  color: #27374c;
+  font-size: 18px;
+  font-weight: 600;
+}
+.ant-col.parentssection.ant-col-md-9,
+.ant-col.studentsection.ant-col-md-3,
+.ant-col.educatorssection.ant-col-md-7 {
+  position: relative;
+}
+.parentssection {
+  text-align: center;
+}
+.parentssection img {
+  width: 40%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: 1s;
+}
+.activeparentssec img {
+  width: 100%;
+  height: 100%;
+}
+.parentssection:hover img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.parentssection h3 {
+  position: absolute;
+  bottom: 30px;
+  left: 100px;
+  text-align: left;
+  font-size: 32px;
+  color: #fff;
+  line-height: 30px;
+  font-weight: 600;
+  transform: rotate(-90deg);
+  transition: 1s;
+}
+.parentssection:hover h3 {
+  left: 20px;
+  transform: rotate(0deg);
+}
+.parentssection:nth-child(3) img {
+  border: 1px solid #f3f3f3;
+}
+.activeparentssec h3 {
+  left: 20px;
+  transform: rotate(0deg);
+}
+.studentsection h3 {
+  position: absolute;
+  top: 310px;
+  text-align: left;
+  left: 150px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  transform: rotate(270deg);
+}
+.educatorssection h3 {
+  position: absolute;
+  top: 310px;
+  text-align: left;
+  left: 80px;
+  font-size: 32px;
+  color: #fff;
+  font-weight: 600;
+  transform: rotate(270deg);
+}
+/* Third  Section End */
+
+/* Fourth Feature  Section Start */
+
+.featureHomeNewup-main {
+  background-image: url(../img/Homepage/section5.webp);
+  background-size: cover;
+  background-position: center;
+  height: 435px;
+  margin: 80px 0 20px 0;
+  position: relative;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  background-attachment: fixed;
+}
+.featureHomeNewup-inner h3 {
+  font-size: 32px;
+  font-weight: 600;
+}
+.featureHomeNewup-inner button.ant-btn {
+  background: #27374c;
+  color: #fff;
+  height: auto;
+  padding: 10px 20px;
+  border-radius: 50px;
+  font-size: 12px;
+  font-weight: 500;
+}
+.featureHomeNewup-inner {
+  background: #fff;
+  width: 20%;
+  position: relative;
+  right: 80px;
+  line-height: normal;
+  padding: 60px 30px 60px 30px;
+  border-radius: 50px;
+}
+.featureHomeNewup-inner p {
+  font-size: 20px;
+  font-weight: 600;
+}
+.featuresNewHome-Inner {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  padding: 20px 0 20px 0;
+  border-right: 2px dotted #27374c;
+}
+.featuresNewHome-Inner-main {
+  display: flex;
+  align-items: self-start;
+  width: 32%;
+}
+.whyupstarth3 h3 {
+  font-size: 50px;
+  line-height: 70px;
+  margin-top: 50px;
+}
+.featuresNewHome-Inner-main p {
+  font-size: 12px;
+}
+.featuresNewHome-Inner-main h3 {
+  font-size: 22px;
+}
+.whyupstarth3 button.ant-btn {
+  background: #f4b324;
+  border-radius: 0 !important;
+  padding: 15px 20px 15px 20px;
+  height: auto;
+  font-size: 16px;
+  font-weight: 600;
+  position: absolute;
+  bottom: -46px;
+  z-index: -1;
+  width: 100%;
+  left: 38px;
+}
+.whyupstarth3 {
+  position: relative;
+  z-index: 1;
+  padding-left: 10px;
+}
+.featuresNewHome-Inner-main {
+  display: flex;
+  align-items: start;
+}
+/* Fourth Feature  Section end */
+
+/* upstart effect */
+.Effect-upstart-bg {
+  background: #fcc257;
+  padding: 60px 0 60px 0;
+}
+.Effect-upstart-bg .home-container {
+  padding: 0 100px 0 100px;
+}
+p.effect-title1 {
+  color: #27374c4f;
+  font-size: 60px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+p.effect-title2 {
+  font-size: 40px;
+  margin: -45px 0 20px 14px;
+  font-weight: 600;
+}
+.Discover {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+.Discover img {
+  width: 60px;
+  margin-right: 20px;
+}
+.Discover p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.Discover:after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  left: 30px;
+  border-left: 3px dotted #000000;
+  height: 140px;
+}
+.Discover-main p:nth-child(1) {
+  font-size: 26px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.Adapt-main {
+  margin: 60px 0 30px 0;
+}
+.adapt {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+.adapt img {
+  width: 60px;
+  margin-right: 20px;
+}
+.adapt p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.adapt:after {
+  content: '';
+  position: absolute;
+  top: 90px;
+  bottom: 0;
+  left: 30px;
+  border-left: 3px dotted #000000;
+  height: 140px;
+}
+.Adapt-main p:nth-child(1) {
+  font-size: 26px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+
+.achieve {
+  display: flex;
+  align-items: start;
+  position: relative;
+}
+.achieve img {
+  width: 60px;
+  margin-right: 20px;
+}
+.achieve p {
+  font-weight: 600;
+  font-size: 18px;
+}
+.Achieve-main p:nth-child(1) {
+  font-size: 26px;
+  margin-bottom: 0;
+  font-weight: 600;
+}
+.Effectvideo-head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #27374c;
+  padding: 20px 0 20px 0;
+  width: 500px;
+  margin-left: auto;
+  margin-right: 40px;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: -50px;
+}
+.Effectvideo-head p {
+  color: #fff;
+  margin: 0 5px 0 5px;
+}
+p.Effectvideo-title {
+  font-size: 40px;
+  font-weight: 600;
+}
+p.Effectvideo-subtitle {
+  font-size: 12px;
+  font-weight: 600;
+}
+.Effect-upstart-right {
+  position: relative;
+  top: 40px;
+}
+/* upstart effect end*/
+
+/* Free Practice Exams */
+p.practiceExam-bg {
+  font-size: 100px;
+  line-height: 90px;
+  opacity: 0.1;
+  margin: 0;
+  font-weight: 600;
+}
+p.practiceExam-title {
+  font-size: 60px;
+  line-height: 60px;
+  margin: -160px 0 -100px 60px;
+  font-weight: 600;
+}
+.flex-practiceExam p {
+  margin: 0;
+  font-weight: 600;
+  font-size: 25px;
+  color: #fff;
+}
+.flex-practiceExam {
+  width: 96%;
+  margin-left: auto;
+  height: 250px;
+  background: #f4b324;
+  padding: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+}
+/* Free Practice Exams end*/
+
+/* start */
+.progressbar-Inner h1 {
+  font-size: 48px;
+  margin: 0;
+  line-height: normal;
+  font-weight: 500;
+}
+.progressbar-InnerDiv p {
+  font-size: 38px;
+  font-weight: 500;
+  margin: 20px 0 0 0;
+  line-height: 40px;
+}
+.progressbar-InnerDiv {
+  width: 60%;
+  margin: 0 auto;
+}
+.testCard1HeadingMainHome-Main {
+  width: 65%;
+  margin: 0 auto;
+  background: #27374c;
+  color: #fff;
+  padding: 20px 20px 20px 20px;
+  border-radius: 40px;
+}
+.testCard1Heading-title {
+  justify-content: space-between;
+}
+.testCard1HeadingMainHome-Main .title {
+  color: #fff;
+  font-size: 20px;
+}
+.testCard1HeadingMainHome .testCard1Heading-title {
+  border-bottom: 2px solid #fff;
+}
+.testCard1HeadingMainHome .testinnerCard_div {
+  margin-top: 12px;
+}
+.ant-col.progressbar-Inner.ant-col-md-12 {
+  border-right: 5px dotted;
+}
+.progressbar-InnerDiv h1 {
+  font-size: 47px;
+  line-height: normal;
+  margin: 0;
+  font-weight: 600;
+}
+.missonHeading h1 {
+  font-size: 99px;
+  line-height: 90px;
+  margin: unset;
+  padding: 40px;
+}
+.ant-row.progressbar-Main {
+  padding-bottom: 160px;
+}
+.textMissonDiv p {
+  font-size: 23px;
+  font-weight: 600;
+  padding: 40px;
+}
+.ant-row.misson-Row {
+  border-top: 2px solid #27374c;
+  border-bottom: 3px dotted #27374c;
+}
+.missonHeading {
+  border-right: 3px dotted #27374c;
+}
+.firstmisson p,
+.secondmisson p {
+  font-size: 18px;
+  font-weight: 500;
+  margin: unset;
+  padding: 50px;
+}
+.misson img {
+  width: 250px;
+}
+.secondmisson p {
+  border-right: 3px dotted #27374c;
+}
+.ant-col.misson.ant-col-md-8 {
+  text-align: center;
+}
+.ant-row.missonbgImage {
+  padding: 40px 0 120px 0;
+}
+.discoverRow h1 {
+  font-size: 34px;
+  font-weight: 600;
+  padding: 20px;
+}
+.discoverRow p {
+  font-weight: 600;
+  font-size: 18px;
+  padding: 40px;
+}
+.ant-row.discoverRow {
+  border-top: 2px solid #27374c;
+}
+.discoverRow-inner1 {
+  border-right: 3px dotted #27374c;
+}
+.discoverbgRow-Col {
+  position: relative;
+}
+.discoverbgRow-text {
+  position: absolute;
+  top: 300px;
+  right: 50px;
+  width: 330px;
+}
+.discoverbgRow-text p {
+  font-size: 25px;
+  color: #fff;
+  font-weight: 600;
+  margin: 0;
+  line-height: 28px;
+}
+.discoverbgRow-text svg {
+  background: #fff;
+  padding: 10px 10px 10px 10px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+.discoverbgRowIcon {
+  margin-top: 40px;
+  text-align: right;
+}
+.upstartsreneMain {
+  padding: 60px 0px 60px 0px;
+}
+.upstartsreneCol {
+  position: relative;
+}
+.upstarttextdiv {
+  position: absolute;
+  top: 0;
+  left: 270px;
+}
+.btnfree {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 30px;
+  text-align: center;
+}
+.upstarttextdiv h3 {
+  font-size: 109px;
+  line-height: 120px;
+  margin: 0;
+}
+.btnfree button.ant-btn {
+  background: #27374c;
+  color: #fff;
+  height: auto;
+  font-size: 16px;
+  border-radius: 50px;
+  padding: 10px 20px 10px 20px;
+  border: 1px solid #fff;
+}
+.SecondfreeGuidediv-second img {
+  width: 550px;
+  margin: 0 auto;
+}
+.SecondfreeGuidediv-First p {
+  font-size: 25px;
+  font-weight: 500;
+}
+.SecondfreeGuidediv-second {
+  text-align: center;
+}
+.SecondfreeGuidediv-First {
+  border-right: 3px dotted;
+  margin-bottom: 30px;
+}
+
+/* End */
+
+/* Built from the ground UP */
+.built-ground-space {
+  padding: 50px 0 50px 0;
+  position: relative;
+}
+.builtDemandRightSec {
+  position: absolute;
+  top: 40px;
+  padding: 0 20px 0 20px;
+}
+.builtDemandRightSec img {
+  width: 100%;
+}
+.built-ground-title {
+  font-size: 100px;
+  margin: 0;
+  font-weight: 600;
+  position: relative;
+  z-index: 1;
+}
+.built-ground-main {
+  border-right: 2px dotted #272b41;
+  padding: 0 20px 0 20px;
+}
+.builtDemandRightSec button {
+  background: #272b41;
+  color: #fff;
+  border: none;
+  padding: 10px 20px 10px 20px;
+  font-size: 20px;
+  position: relative;
+  top: -60px;
+  cursor: pointer;
+}
+p.built-ground-title span {
+  color: #fff;
+}
+p.built-ground-demand {
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 40px;
+}
+.built-ground-demand span {
+  color: #f4b324;
+}
+p.built-ground-des {
+  font-size: 15px;
+  font-weight: 600;
+  border-bottom: 2px solid #27374c;
+  padding-bottom: 10px;
+}
+p.built-ground-des span {
+  color: #f4b324;
+}
+ul.builtIcon-content li {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+ul.builtIcon-content p {
+  font-size: 16px;
+  margin-bottom: 0;
+}
+ul.builtIcon-content img {
+  width: 37px;
+  margin-right: 20px;
+}
+/* Built from the ground UP End */
+
+/* Upstart Ascend  */
+.Ascend-main {
+  position: relative;
+}
+.Ascend-main img {
+  width: 100%;
+}
+p.title1 {
+  margin: 0;
+  font-size: 140px;
+  text-align: left;
+  position: absolute;
+  top: -22px;
+  right: 0;
+  line-height: 140px;
+  opacity: 0.1;
+  font-weight: 600;
+}
+p.title2 {
+  margin: 0;
+  font-size: 100px;
+  text-align: left;
+  position: absolute;
+  top: 30px;
+  right: 140px;
+  line-height: 90px;
+  font-weight: 600;
+}
+.Ascend-main button {
+  background: #272b41;
+  color: #fff;
+  border: 2px solid #000;
+  border-radius: 50px;
+  padding: 7px 20px 7px 20px;
+  position: absolute;
+  right: 50px;
+  bottom: 50px;
+}
+.Ascend-equation {
+  font-size: 35px;
+  line-height: 36px;
+  font-weight: 600;
+}
+.Ascend-equation span,
+.Ascend-equation2 span {
+  color: #fcc257;
+}
+.Ascend-equation2 {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 600;
+}
+.Ascend-border {
+  border-right: 2px dotted #272b41;
+  height: 100%;
+  width: 69%;
+  float: right;
+  margin-right: 20px;
+}
+p.equation-title {
+  font-size: 30px;
+  margin: 0;
+  font-weight: 600;
+  padding: 0px 20px 0px 20px;
+}
+p.equation-des {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0;
+  padding: 0px 40px 0px 50px;
+  width: 90%;
+  margin-left: auto;
+}
+.equation-des span {
+  color: #fcc257;
+}
+.equation-space {
+  border-top: 3px solid #27374c;
+  border-bottom: 3px solid #27374c;
+  padding: 10px 20px 10px 20px !important;
+  border-right: 2px dotted #27374c;
+  margin-top: 20px;
+}
+.testCard1HeadingMainHome-Main .testinnerCard_div span {
+  color: #fff !important;
+}
+.testCard1HeadingMainHome-Main .StandardTimeDiv {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+.testCard1HeadingMainHome-Main .StandardTimeDiv button {
+  background: #ced2db;
+  font-weight: 600;
+  font-size: 16px;
+}
+.testCard1HeadingMainHome-Main .bgschedule {
+  background-color: #f4b324 !important;
+  border: none;
+  border-radius: 50px;
+}
+.lastfooterIMg {
+  padding: 120px 0 0 0;
+}
+.lastfooterIMg img {
+  width: 100%;
+}
+.equation-space:nth-child(3) {
+  border-right: none;
+}
+/* Upstart Ascend End */
+
+/* Values Start */
+.values-firstdiv p {
+  font-size: 23px;
+  font-weight: 600;
+  color: #525d87;
+}
+.values-firstdiv h3 {
+  font-size: 47px;
+  margin: 0;
+  line-height: 50px;
+}
+.valuesRow {
+  display: flex;
+  align-items: center;
+  border-top: 2px solid #27374c;
+}
+.values-seconddiv-inner1 {
+  position: absolute;
+  top: 460px;
+  left: 81px;
+  align-items: start;
+  width: 370px;
+  color: #fff;
+}
+.values-seconddiv-inner2 {
+  position: absolute;
+  top: 120px;
+  right: 140px;
+  width: 280px;
+}
+.values-seconddiv-inner1 p,
+.values-seconddiv-inner2 p {
+  font-size: 22px;
+  color: #fff;
+}
+.values-seconddiv-inner1 span,
+.values-seconddiv-inner2 span {
+  font-size: 16px;
+  display: flex;
+  margin-right: 40px;
+  justify-content: end;
+  color: #fff;
+}
+/* Values end */
+
+.featuresNewHome-Inner-main img {
+  margin-right: 10px;
+  width: 60px;
+}
+.Prep_content p {
+  font-weight: 600;
+  font-size: 17;
+  font-size: 17px;
+}
+.tutoring_ISEE img {
+  width: 90%;
+  background: #27374c;
+  border-radius: 45px;
+}
+.tutoring_SSAT img {
+  background: #f38755;
+  border-radius: 45px;
+  width: 90%;
+}
+.tutoring_SAT img {
+  background: #5fa0e5;
+  border-radius: 45px;
+  width: 90%;
+}
+.tutoring_ACT img {
+  background: #f4b324;
+  border-radius: 45px;
+  width: 90%;
+}
+label.ck-voice-label {
+  display: none !important;
+}
+.ckeditorgalleryimage button {
+  left: 388px !important;
+  top: 25px !important;
+}
+.sportsorg img {
+  width: 100%;
+}
+.mob-firstlearningDiv {
+  display: none;
+}
+.valuesRow {
+  overflow: hidden;
+  height: 100vh;
+}
+.yellow-shape {
+  height: 250px;
+  background: #f4b324;
+  padding: 40px;
+  border-radius: 30px;
+}
+.skyBlue-shape {
+  height: 250px;
+  background: #5fa0e5;
+  border-radius: 30px;
+  padding: 40px;
+}
+.darkBlue-shape {
+  height: 250px;
+  background: #27374c;
+  border-radius: 30px;
+  padding: 40px;
+}
+.values-firstdiv2:hover {
+  transform: translateY(0);
+}
+.values-firstdiv2 {
+  transform: translateY(42px);
+  transition: 1s;
+}
+.values-firstdiv1:hover {
+  transform: translateY(0);
+}
+.values-firstdiv1 {
+  transform: translateY(42px);
+  transition: 1s;
+}
+.shapeCenter {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  height: 300px;
+  margin: 50px 0 50px 0;
+}
+.shapeCenter p {
+  font-size: 22px;
+  color: #fff;
+  line-height: 26px;
+  font-weight: 500;
+}
+.shapeCenter small {
+  font-size: 15px;
+  color: #fff;
+  line-height: 20px;
+  font-weight: 500;
+  margin-left: auto;
+}
+.shape-sizes {
+  width: 90%;
+  margin-top: -50px;
+}
+.sportsorg p {
+  font-size: 45px;
+  font-weight: 600;
+  line-height: 45px;
+  text-align: right;
+}
+
+/* Responsive */
+@media (min-width: 1500px) {
+  .header-main-right a {
+    font-size: 19px !important;
+  }
+  .Tutoringdata p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1700px) {
+  .header-main {
+    width: 100%;
+  }
+}
+@media (min-width: 1800px) {
+  .home-container {
+    width: 1550px;
+  }
+  p.built-ground-title span {
+    color: #27374c;
+  }
+  .builtDemandRightSec img {
+    width: 700px;
+  }
+}
+@media (max-width: 1799px) {
+  .home-container {
+    width: 1220px;
+  }
+  .NewHomeMainDiv-inner {
+    top: 20px;
+  }
+  .NewHomeMainDiv {
+    margin-top: 50px;
+  }
+  .sectionSecond-inner {
+    top: 50px;
+  }
+  .builtDemandRightSec img {
+    width: 700px;
+  }
+  .values-seconddiv-inner1 p,
+  .values-seconddiv-inner2 p {
+    font-size: 18px;
+  }
+  .values-seconddiv-inner1 {
+    position: absolute;
+    top: 350px;
+    left: 71px;
+    width: 290px;
+  }
+  .values-seconddiv-inner2 {
+    position: absolute;
+    top: 80px;
+    right: 70px;
+    width: 280px;
+  }
+}
+@media (min-width: 1500px) {
+  .Tutoringdata p {
+    font-size: 28px;
+  }
+}
+@media (max-width: 1500px) {
+  .discoverbgRow-text {
+    top: 180px;
+    right: 0px;
+  }
+  .discoverbgRow-text svg {
+    width: 60px;
+    height: 60px;
+    margin-right: 70px;
+  }
+}
+@media (max-width: 1220px) {
+  .adapt:after {
+    height: 160px;
+  }
+  .Discover:after {
+    height: 190px;
+  }
+  .Discover p {
+    font-size: 16px;
+  }
+  .achieve p {
+    font-size: 16px;
+  }
+  .Effectvideo-head {
+    width: 100%;
+  }
+  .adapt p {
+    font-size: 16px;
+  }
+  .firstlearningDiv p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+  .firstlearningDiv button.ant-btn {
+    white-space: normal;
+    line-height: 18px;
+    padding: 10px 20px 10px 20px;
+    font-size: 16px;
+  }
+  .parentssection h3 {
+    left: 40px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+  .header-main-left {
+    padding: 0;
+  }
+  .home-container {
+    width: 1100px;
+  }
+  .NewHomeMainDiv-inner {
+    top: 0px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+  .sectionSecond-inner {
+    top: 20px;
+  }
+  .values-seconddiv-inner1 {
+    position: absolute;
+    top: 320px;
+    left: 50px;
+    width: 270px;
+  }
+  .values-seconddiv-inner2 {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    width: 280px;
+  }
+  .values-seconddiv-inner1 p,
+  .values-seconddiv-inner2 p {
+    font-size: 16px !important;
+  }
+  .Effectvideo-head {
+    margin-right: 0;
+  }
+  p.Effectvideo-title {
+    font-size: 25px;
+  }
+  p.Effectvideo-subtitle {
+    font-size: 10px;
+  }
+  .Effectvideo-head {
+    padding: 15px 0 15px 0;
+  }
+  .whyupstarth3 button.ant-btn {
+    width: 90%;
+    left: 20px;
+  }
+  .whyupstarth3 h3 {
+    font-size: 40px;
+    line-height: 40px;
+  }
+  .progressbar-InnerDiv h1 {
+    font-size: 35px;
+  }
+  .progressbar-InnerDiv p {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .builtDemandRightSec img {
+    width: 100%;
+  }
+  .shapeCenter p {
+    font-size: 18px;
+    color: #fff;
+    line-height: 26px;
+    font-weight: 500;
+  }
+  .shapeCenter small {
+    font-size: 14px;
+    line-height: 17px;
+  }
+  .shape-sizes {
+    width: 95%;
+  }
+  .skyBlue-shape {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .discoverbgRow-text {
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100% !important;
+  }
+  .discoverbgRow-text p {
+    color: #000;
+  }
+  .discoverbgRow-text svg {
+    background: #000;
+    color: #fff;
+  }
+  .home-container {
+    width: 90%;
+  }
+  .featureHomeNewup-inner {
+    width: 30%;
+  }
+  .whyupstarth3 h3 {
+    font-size: 35px;
+    line-height: 35px;
+    margin: 0 0 30px;
+  }
+  .builtDemandRightSec img {
+    width: 100%;
+  }
+  .built-ground-title {
+    font-size: 80px;
+  }
+  .values-firstdiv h3 {
+    font-size: 30px;
+    line-height: 40px;
+  }
+  .SecondfreeGuidediv-second img {
+    width: 90%;
+  }
+  .SecondfreeGuidediv-First p {
+    font-size: 18px;
+  }
+  .values-seconddiv-inner2 {
+    right: 50px;
+    width: 250px;
+  }
+  .values-seconddiv-inner1 {
+    top: 270px;
+    left: 52px;
+    width: 250px;
+  }
+  .btnfree {
+    bottom: 13px;
+  }
+  .discoverbgRow-text p {
+    font-size: 18px;
+  }
+  .discoverbgRowIcon {
+    margin-top: 10px;
+    text-align: left;
+  }
+  .discoverRow h1 {
+    font-size: 20px;
+    padding: 0;
+  }
+  .missonHeading h1 {
+    font-size: 50px;
+    line-height: 50px;
+  }
+  .featuresNewHome-Inner {
+    justify-content: space-between;
+  }
+  .featuresNewHome-Inner-main h3 {
+    font-size: 18px;
+  }
+  .Adapt-main {
+    margin: 20px 0 20px 0;
+  }
+  .parentssection {
+    margin-bottom: 20px;
+  }
+  p.practiceExam-title {
+    font-size: 40px;
+    line-height: 40px;
+    margin: -70px 0 -50px 40px;
+  }
+  .upstarttextdiv h3 {
+    font-size: 50px;
+    line-height: 50px;
+    margin: 0;
+    color: #27374c !important;
+    margin-left: 50px !important;
+  }
+  .upstarttextdiv {
+    left: 150px;
+  }
+}
+
+@media (max-width: 769px) {
+  .sportsorg p {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .sectionSecond-inner {
+    top: 0px;
+  }
+  .NewHomeMainDiv-inner-p {
+    font-size: 18px;
+  }
+  .Tutoringdata2 {
+    left: 0;
+  }
+  .Tutoringcontent1 {
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .shapeCenter {
+    margin: 50px 20px 50px 20px;
+  }
+  .shapeCenter p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .values-firstdiv1,
+  .values-firstdiv2 {
+    overflow-x: scroll;
+  }
+  .shape-sizes {
+    width: 600px;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    margin: 0 !important;
+  }
+  .valuesRow {
+    height: auto;
+  }
+  .yellow-shape {
+    width: 100%;
+  }
+  .skyBlue-shape {
+    width: 100%;
+  }
+  .darkBlue-shape {
+    width: 100%;
+  }
+  p.practiceExam-bg {
+    font-size: 60px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 600px) {
+  .Discover:after {
+    height: 160px;
+  }
+  .shapeCenter p {
+    font-size: 14px;
+  }
+  .shapeCenter small {
+    font-size: 12px;
+  }
+  .shape-sizes div {
+    padding: 20px;
+    height: 300px;
+  }
+  .parentssection img {
+    width: 100%;
+    height: 100%;
+  }
+  .firstlearningDiv,
+  .hidmob-parentssection {
+    display: none;
+  }
+  .mob-firstlearningDiv {
+    display: block;
+  }
+  .mob-firstlearningDiv {
+    text-align: center;
+  }
+  .mob-firstlearningDiv button {
+    font-size: 14px !important;
+    text-align: center;
+    background: #27374c !important;
+    color: #fff !important;
+  }
+  .Tutoringdata .react-multi-carousel-item {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .progressbar-InnerDiv {
+    width: 90%;
+  }
+  .built-ground-title {
+    font-size: 40px;
+    line-height: normal;
+  }
+  .built-ground-title span {
+    color: #000 !important;
+  }
+  .builtDemandRightSec {
+    position: relative;
+    top: 0;
+  }
+  .built-ground-main {
+    border-right: none;
+    padding: 0;
+  }
+  .built-ground-space {
+    padding: 30px 0 10px 0;
+  }
+  p.title1 {
+    font-size: 50px;
+    position: relative;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+  }
+  .Ascend-main button {
+    position: relative;
+    right: 0;
+    bottom: 0;
+  }
+  .Ascend-border {
+    border-right: none;
+    width: 90%;
+    float: none;
+    margin-right: 0;
+  }
+  .equation-space {
+    border-right: none;
+  }
+  p.title2 {
+    font-size: 50px;
+    position: relative;
+    top: 0;
+    right: 0;
+    line-height: 50px;
+  }
+  .flex-practiceExam p {
+    font-size: 16px;
+  }
+  .SecondfreeGuidediv-second img {
+    width: 100%;
+  }
+  .Tutoringdata-sec img {
+    width: 100%;
+  }
+  .NewHomeMainDiv-inner-btns {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 15px 20px 15px;
+  }
+  button.ant-btn.JoinBtn {
+    padding: 8px 16px 8px 16px;
+    font-size: 14px;
+    margin-right: 10px;
+  }
+  button.ant-btn.ScheduleBtn {
+    padding: 8px 16px 8px 16px;
+    font-size: 14px;
+  }
+  .Tutoringcontent1 .ant-row {
+    display: block;
+  }
+  .tutoring-title {
+    text-align: center;
+    font-size: 22px;
+  }
+  .tutoring-service-main {
+    width: 100%;
+    border: none;
+  }
+  .tutoring-service button {
+    font-size: 12px;
+    padding: 0 7px 0 7px;
+    font-weight: 600;
+  }
+  .Tutoringdata-txt1 img {
+    width: 100%;
+    display: none;
+  }
+  p.effect-title1 {
+    font-size: 28px;
+  }
+  p.effect-title2 {
+    font-size: 24px;
+    font-weight: 600;
+    margin: -13px 0 20px 14px;
+  }
+  .Effect-upstart-bg .home-container {
+    padding: 0 20px 0 20px;
+  }
+  .Effectvideo-head {
+    display: none;
+    width: 100%;
+    /* position: absolute; */
+    /* left: 0; */
+    /* right: 0; */
+    /* top: -50px; */
+  }
+  .builtDemandRightSec img {
+    width: 100%;
+  }
+  .upstarttextdiv h3 {
+    font-size: 20px;
+    line-height: 20px;
+    margin: 0;
+  }
+  .featureHomeNewup-inner {
+    width: 50%;
+    position: relative;
+    right: 30px;
+    border-radius: 20px;
+  }
+  p.Effectvideo-subtitle {
+    display: none;
+  }
+  .featuresNewHome-Inner {
+    display: block;
+    border: none;
+  }
+  .featuresNewHome-Inner-main {
+    width: 100%;
+  }
+  .whyupstarth3 button.ant-btn {
+    left: 0;
+  }
+  .btnfree {
+    position: absolute;
+    bottom: -30px;
+  }
+  .NewHomeMainDiv h1 {
+    font-size: 20px;
+  }
+  .sectionSecond-inner {
+    display: none;
+  }
+  .NewHomeMainDiv-inner {
+    top: 0px;
+    right: 0;
+    left: 0;
+    padding: 20px;
+  }
+  .header-main-left {
+    border-right: none;
+  }
+  .Tutoringdata-sec {
+    width: 50%;
+    margin: 0 auto;
+    border-bottom: 2px solid #27374c;
+    padding-bottom: 8px;
+    padding-right: 10px;
+  }
+  .Tutoringdata2 {
+    display: block;
+  }
+  .Tutoringdata-txt1 p:nth-child(3) {
+    font-size: 24px;
+  }
+  p.Tutoringdata-txt2 {
+    font-size: 16px;
+  }
+  .Tutoringdata-txt1 {
+    margin-top: 10px;
+    text-align: center;
+  }
+  .sectionThirdHome-fluid {
+    padding: 0px 0 50px 0;
+    background: transparent;
+  }
+  .ant-col.parentssection.ant-col-xs-24.ant-col-md-6 {
+    display: none;
+  }
+  .parentssection h3 {
+    bottom: 15px;
+    left: 19px;
+    font-size: 18px;
+    line-height: 20px;
+    margin-bottom: 10px;
+    transform: unset;
+  }
+  .firstlearningDiv button.ant-btn {
+    padding: 8px 15px 8px 15px;
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+  .firstlearningDiv p {
+    font-size: 25px;
+    line-height: 25px;
+  }
+
+  .sectionThirdHome-Main {
+    padding: 0;
+  }
+  .ant-col.firstlearningDiv.ant-col-md-6 {
+    position: relative;
+    margin: 0;
+  }
+  .featureHomeNewup-main {
+    height: auto;
+    padding: 20px 0 20px 0;
+  }
+  .ant-col.progressbar-Inner.ant-col-md-12 {
+    border-right: none;
+  }
+  .progressbar-InnerDiv h1 {
+    font-size: 20px;
+  }
+  .progressbar-InnerDiv p {
+    font-size: 20px;
+    font-weight: 500;
+    margin: 20px 0 0 0;
+    line-height: 20px;
+  }
+  .missonHeading {
+    border-right: none;
+  }
+  .featureHomeNewup-inner p {
+    font-size: 16px;
+  }
+  .featureHomeNewup-inner button.ant-btn {
+    padding: 7px 7px;
+    font-size: 10px;
+  }
+  .missonHeading h1 {
+    font-size: 50px;
+    padding: 10px;
+    line-height: 50px;
+  }
+  .discoverRow-inner1 {
+    border-right: none;
+  }
+  .upstarttextdiv {
+    left: 30px;
+  }
+  .ant-row.missonbgImage {
+    padding: 40px 0 40px 0;
+  }
+  .discoverRow p {
+    padding: 0;
+  }
+  .textMissonDiv p {
+    font-size: 16px;
+    font-weight: 600;
+    padding: 10px 10px 10px 10px;
+  }
+  .ant-row.misson-Row {
+    border: none;
+  }
+  p.practiceExam-bg {
+    font-size: 50px;
+    line-height: 50px;
+    margin-top: 40px;
+  }
+  .sportsorg p {
+    font-size: 30px;
+    line-height: 30px;
+  }
+
+  .misson img {
+    width: 60%;
+  }
+  .firstmisson p,
+  .secondmisson p {
+    font-size: 16px;
+    padding: 10px;
+  }
+  .secondmisson p {
+    border: none;
+  }
+  .flex-practiceExam {
+    width: 96%;
+    display: flex;
+    height: 180px;
+  }
+  .testCard1HeadingMainHome-Main {
+    width: 100%;
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 30px;
+  }
+  .ant-row.progressbar-Main {
+    padding-bottom: 40px;
+  }
+  .values-seconddiv-inner1 {
+    top: 125px;
+    left: 23px;
+    width: 140px;
+  }
+  .values-seconddiv-inner1 p,
+  .values-seconddiv-inner2 p {
+    font-size: 12px !important;
+    line-height: 15px;
+  }
+  .values-seconddiv-inner1 span,
+  .values-seconddiv-inner2 span {
+    font-size: 10px;
+    line-height: 10px;
+  }
+  .values-seconddiv-inner2 {
+    right: 30px;
+    width: 128px;
+    top: 10px;
+  }
+  .values-firstdiv h3 {
+    font-size: 25px;
+    line-height: 25px;
+    margin-bottom: 10px;
+  }
+  .Prep_content h2 {
+    font-size: 50px !important;
+  }
+  .Prep_content_2 ul {
+    float: none !important;
+    margin-left: 10px;
+  }
+  .SecondfreeGuidediv-First {
+    border-right: none;
+  }
+  p.equation-des {
+    padding: 0px 20px 0px 20px;
+    width: 100%;
+  }
+  .Ascend-main {
+    margin-bottom: 20px;
+  }
+  .builtDemandRightSec button {
+    top: 0px;
+    line-height: normal;
+    font-size: 16px;
+    width: 100%;
+  }
+}
+
+/* Abhishek */
+@media (max-width: 1024px) {
+  .header-main-left {
+    border: none;
+  }
+  .NewHomeMainDiv h1 {
+    font-size: 51px;
+    line-height: normal;
+    color: #fff;
+  }
+  .NewHomeMainDiv-inner {
+    top: 0px;
+    right: 0;
+    left: 0;
+    padding: 84px 52px;
+  }
+  .NewHomeMainDiv-inner-p {
+    font-size: 20px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+  .Tutoringcontent {
+    padding: 0px;
+  }
+  .sectionThirdHome-fluid {
+    background-image: url(/static/media/modern-solution-bg.8d0e9355.png);
+    background-size: cover;
+    background-position: center;
+    padding: 0 0 170px 0;
+  }
+  .sectionThirdHome-Main {
+    padding: 0px 0 70px 0;
+  }
+  .Effect-upstart-bg {
+    background: #fcc257;
+    padding: 30px 0 100px 0;
+  }
+  .Effect-upstart-bg .home-container {
+    padding: 0;
+  }
+  .ant-col-md-10 {
+    max-width: 100%;
+  }
+  .ant-col-md-14 {
+    max-width: 100%;
+  }
+  .Effect-upstart-right {
+    position: relative;
+    top: 60px;
+  }
+  .Effectvideo-head {
+    padding: 15px 0 15px 0;
+  }
+  .Effectvideo-head {
+    margin-right: 0;
+  }
+  .Effectvideo-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #27374c;
+    width: 450px;
+    margin-left: auto;
+    position: absolute;
+    left: 0;
+    right: 40px;
+    top: -45px;
+  }
+  p.Effectvideo-title {
+    font-size: 27px;
+  }
+  p.Effectvideo-subtitle {
+    font-size: 12px;
+  }
+  p.effect-title1 {
+    color: #27374c4f;
+    font-size: 83px;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  p.effect-title2 {
+    font-size: 55px;
+    margin: -61px 0 20px 19px;
+  }
+  .whyupstarth3-main {
+    padding: 55px 0 0 0;
+  }
+  .whyupstarth3 button.ant-btn {
+    background: #f4b324;
+    border-radius: 0 !important;
+    padding: 15px 20px 15px 20px;
+    height: auto;
+    font-size: 14px;
+    font-weight: 600;
+    position: absolute;
+    bottom: -54.5px;
+    margin-left: 10px;
+  }
+  .missonHeading h1 {
+    font-size: 68px;
+  }
+  .missonHeading h1 {
+    padding: 56px 0 0 40px;
+  }
+  .discoverRow h1 {
+    font-size: 24px;
+    margin-top: 1.5rem;
+  }
+  .discoverRow h1 {
+    font-weight: 700;
+    padding: 5px;
+  }
+  .built-ground-title {
+    font-size: 74px;
+  }
+}
+
+/* ---------------------------------768px----------------------------- */
+@media (max-width: 768px) {
+  .header-main-left {
+    border: none;
+  }
+  .NewHomeMainDiv-inner {
+    top: 0px;
+    right: 0;
+    left: 0;
+    padding: 47px 33px;
+  }
+  .NewHomeMainDiv-inner-p {
+    font-size: 16px;
+    font-weight: 500;
+    padding-top: 20px;
+  }
+  .NewHomeMainDiv h1 {
+    font-size: 45px;
+    line-height: normal;
+    color: #fff;
+  }
+  .tutoring-title {
+    text-align: center;
+    font-size: 40px;
+  }
+  .Tutoringcontent {
+    padding: 0px;
+  }
+  .sectionThirdHome-Main {
+    padding: 0px 0 70px 0;
+  }
+  .Effect-upstart-bg {
+    background: #fcc257;
+    padding: 30px 0 90px 0;
+  }
+  .Effect-upstart-bg .home-container {
+    padding: 0;
+  }
+  .ant-col-md-10 {
+    max-width: 100%;
+  }
+  .ant-col-md-14 {
+    max-width: 100%;
+  }
+  .Effect-upstart-right {
+    position: relative;
+    top: 60px;
+  }
+  p.effect-title1 {
+    color: #27374c4f;
+    font-size: 63px;
+    margin-bottom: 0;
+    font-weight: 600;
+  }
+  p.effect-title2 {
+    font-size: 42px;
+    margin: -47px 0 20px 14px;
+    font-weight: 600;
+  }
+  .Effectvideo-head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #27374c;
+    width: 325px;
+    margin-left: auto;
+    position: absolute;
+    left: 0;
+    right: 40px;
+    top: -34px;
+  }
+  p.Effectvideo-title {
+    font-size: 16px;
+  }
+  p.Effectvideo-subtitle {
+    font-size: 8px;
+  }
+  .featureHomeNewup-inner {
+    background: #fff;
+    position: relative;
+    right: 80px;
+    line-height: normal;
+    padding: 30px 30px 30px 30px;
+    border-radius: 50px;
+  }
+  .featureHomeNewup-inner button.ant-btn {
+    background: #27374c;
+    color: #fff;
+    height: auto;
+    padding: 8px 13px;
+    border-radius: 50px;
+    font-size: 12px;
+    font-weight: 500;
+  }
+  .whyupstarth3-main {
+    padding: 42px 0 0 0;
+  }
+  .whyupstarth3 h3 {
+    font-size: 27px;
+    line-height: 27px;
+    margin: 0 0 30px;
+  }
+  .whyupstarth3 button.ant-btn {
+    background: #f4b324;
+    border-radius: 0 !important;
+    padding: 10px 10px 10px 10px;
+    height: auto;
+    font-size: 12px;
+    font-weight: 600;
+    white-space: break-spaces;
+    position: absolute;
+    bottom: -43px;
+    margin-left: 10px;
+    width: 100%;
+  }
+  .featuresNewHome-Inner-main img {
+    width: 60px;
+  }
+  .featuresNewHome-Inner-main {
+    display: block;
+  }
+  .firstlearningDiv button.ant-btn {
+    white-space: normal;
+    line-height: 14px;
+    padding: 10px 8px 10px 8px;
+    font-size: 12px;
+  }
+  /* p.practiceExam-bg {
+    font-size: 70px;
+    line-height: 60px;
+    opacity: 0.1;
+    font-weight: 600;
+    margin: 0;
+  } */
+  .testCard1HeadingMainHome-Main {
+    width: 90%;
+    margin: 0 auto;
+    background: #27374c;
+    color: #fff;
+    padding: 20px 20px 20px 20px;
+    border-radius: 40px;
+  }
+  .missonHeading h1 {
+    padding: 40px 0 0 0;
+  }
+  .missonHeading h1 {
+    font-size: 58px;
+  }
+  .built-ground-title {
+    font-size: 55px;
+  }
+  p.built-ground-demand {
+    font-size: 29px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    line-height: 40px;
+  }
+
+  p.built-ground-des {
+    font-size: 13px;
+    font-weight: 600;
+    border-bottom: 2px solid #27374c;
+    padding-bottom: 10px;
+  }
+  ul.builtIcon-content p {
+    font-size: 15px;
+    margin-bottom: 0;
+  }
+  ul.builtIcon-content img {
+    width: 30px;
+    margin-right: 20px;
+  }
+  .Prep_content h2 {
+    font-size: 54px;
+  }
+  .builtDemandRightSec button {
+    padding: 10px 15px 10px 15px;
+    font-size: 11px;
+    top: -37px;
+  }
+  p.title1 {
+    font-size: 100px;
+    line-height: 95px;
+    font-weight: 700;
+  }
+  p.title2 {
+    font-size: 75px;
+    line-height: 62px;
+    font-weight: 700;
+  }
+}
+
+/* ----767-- */
+
+@media (max-width: 767) {
+  .featuresNewHome-Inner {
+    border-right: none;
+  }
+}
+
+/* ----------650---------- */
+@media (max-width: 650px) {
+  .NewHomeMainDiv h1 {
+    font-size: 35px;
+  }
+}
+/* ----------550---------- */
+@media (max-width: 550px) {
+  .NewHomeMainDiv-inner {
+    padding: 17px 33px;
+  }
+}
+
+/* ---425--- */
+@media (max-width: 425px) {
+  .NewHomeMainDiv-inner-btns {
+    padding: 20px 40px 20px 40px;
+  }
+  .tutoring-title {
+    font-size: 28px;
+  }
+  .featureHomeNewup-inner button.ant-btn {
+    background: #27374c;
+    color: #fff;
+    height: auto;
+    padding: 8px 10px;
+    border-radius: 50px;
+    font-size: 10px;
+    font-weight: 500;
+  }
+  .featuresNewHome-Inner-main {
+    width: 100%;
+    display: flex;
+  }
+  .testCard1HeadingMainHome-Main {
+    margin-top: 21px;
+  }
+  .missonHeading h1 {
+    padding: 0;
+  }
+  p.title1 {
+    font-size: 50px;
+    line-height: 28px;
+    position: absolute;
+  }
+  p.title2 {
+    font-size: 50px;
+    line-height: 44px;
+    position: absolute;
+  }
+  .Ascend-main button {
+    left: 90px;
+  }
+}
+/* ----------470---------- */
+@media (max-width: 470px) {
+  .NewHomeMainDiv h1 {
+    font-size: 25px;
+  }
+  button.ant-btn.JoinBtn {
+    padding: 7px 10px 7px 10px;
+  }
+  button.ant-btn.ScheduleBtn {
+    padding: 7px 10px 7px 10px;
+  }
+  p.effect-title1 {
+    font-size: 43px;
+    line-height: normal;
+  }
+  p.effect-title2 {
+    line-height: normal;
+    margin: -5px 0 20px 14px;
+  }
+}
+/* ----------350---------- */
+@media (max-width: 350px) {
+  .NewHomeMainDiv h1 {
+    font-size: 20px;
+  }
+  .featureHomeNewup-inner p {
+    font-size: 13px;
+  }
+  .testCard1HeadingMainHome-Main {
+    margin-top: 18px;
+  }
+  p.practiceExam-bg {
+    font-size: 45px;
+    line-height: 35px;
+    margin-top: 32px;
+  }
+  .featuresNewHome-Inner-main h3 {
+    font-size: 14px;
+  }
+  .featuresNewHome-Inner-main img {
+    width: 50px;
+  }
+  .featureHomeNewup-inner p {
+    font-size: 14px;
+  }
+  .featureHomeNewup-inner button.ant-btn {
+    padding: 8px 10px;
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 320px) {
+  .testCard1HeadingMainHome-Main {
+    width: 100%;
+  }
+}
+.ck.ck-toolbar {
+  background: var(--ck-color-toolbar-background);
+  padding: 0 var(--ck-spacing-small);
+  border: none !important;
+}
+.ck.ck-editor__main > .ck-editor__editable:not(.ck-focused) {
+  border-color: transparent !important;
+}
+.QusetionHeadings-inner:hover {
+  background: transparent !important;
+}
+.QusetionHeadings-inner {
+  display: flex;
+  align-items: center;
+}
+.activeAnswer {
+  background: transparent !important;
+}

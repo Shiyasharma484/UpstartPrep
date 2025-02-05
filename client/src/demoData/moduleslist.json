@@ -1,0 +1,58 @@
+[
+    {
+        "moduleName": "Admin",
+        "modulePermission": "Add, Edit, Update, Delete"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Edit, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Update,"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Edit, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Edit, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Edit"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Edit, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Add, Edit, Update"
+    },
+    {
+        "moduleName": "Lorem Ipsum",
+        "modulePermission": "Edit, Update"
+    }
+]

@@ -1,0 +1,50 @@
+[
+    {
+        "scategory": "South Indian Thali",
+        "pcategory": "Thali",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "North Indian Thali",
+        "pcategory": "Thali",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "Chicken Pizza",
+        "pcategory": "Pizza",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "Pasta",
+        "pcategory": "Italian",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "Continental Pizza",
+        "pcategory": "Pizza",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "Chocolate Ice Cream",
+        "pcategory": "Ice Cream",        
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "Chocolate Shake",
+        "pcategory": "Milk Shake",        
+        "status": "In active",
+        "store": "Restaurant"
+    },
+    {
+        "scategory": "Gulab Jamun",
+        "pcategory": "Sweets",        
+        "status": "Active",
+        "store": "Restaurant"
+    }
+]

@@ -1,0 +1,86 @@
+[
+    {
+        "productName": "Pizza",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "50",
+        "status": "In Stock"
+    },
+    {
+        "productName": "Burger",
+        "sku": "ASD5TD8D",
+        "date": "02/09/2021",
+        "totalStock": "13",
+        "status": "Low Stock"
+    },
+    {
+        "productName": "Sandwich",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "0",
+        "status": "Out of Stock"
+    },
+    {
+        "productName": "Cheese Sandwich",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "50",
+        "status": "In Stock"
+    },
+    {
+        "productName": "Grilled Sandwich",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "12",
+        "status": "Low Stock"
+    },
+    {
+        "productName": "Aloo Tikki Burger",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "10",
+        "status": "Low Stock"
+    },
+    {
+        "productName": "Paneer Pizza",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "50",
+        "status": "In Stock"
+    },
+    {
+        "productName": "Half Fried Egg",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "50",
+        "status": "In Stock"
+    },
+    {
+        "productName": "Egg Omlette",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "50",
+        "status": "In Stock"
+    },
+    {
+        "productName": "Boiled Egg",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "0",
+        "status": "Out of Stock"
+    },
+    {
+        "productName": "Chicken Sandwich",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "50",
+        "status": "In Stock"
+    },
+    {
+        "productName": "Mojito",
+        "sku": "AHD4WD8F",
+        "date": "02/09/2021",
+        "totalStock": "23",
+        "status": "In Stock"
+    }
+]

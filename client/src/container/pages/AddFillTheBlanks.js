@@ -1,0 +1,1465 @@
+import React, { useState, useEffect } from 'react';
+
+import { Form, notification, Select, Col, Row, Input, Switch, Space } from 'antd';
+import FeatherIcon from 'feather-icons-react';
+import { useHistory } from 'react-router-dom';
+import { headers } from '../../helpers/variables';
+import { Main } from '../styled';
+import { Button } from '../../components/buttons/buttons';
+import DataTable from 'react-data-table-component';
+import DataTableExtensions from 'react-data-table-component-extensions';
+import 'react-data-table-component-extensions/dist/index.css';
+import authorizes from '../../../src/static/img/authorized.png';
+import Cookies from 'js-cookie';
+import {
+  get_api_request,
+  post_api_request,
+  put_api_request,
+  delete_api_request,
+  api_url,
+} from '../../helpers/Common.js';
+import { Cards } from '../../components/cards/frame/cards-frame';
+import { Editor, EditorTools } from '@progress/kendo-react-editor';
+import { useParams } from 'react-router-dom/cjs/react-router-dom.min';
+import imageUploadSave from '../../helpers/uploadImage';
+import { CKEditor } from '@ckeditor/ckeditor5-react';
+import ClassicEditor from 'ckeditor5-build-classic-mathtype';
+const {
+  Bold,
+  Italic,
+  Underline,
+  Strikethrough,
+  Subscript,
+  Superscript,
+  OrderedList,
+  UnorderedList,
+  InsertTable,
+  InsertImage,
+} = EditorTools;
+const { imageRender } = require('../../helpers/renderImage');
+const { decrypt } = require('../../helpers/encryption-decryption');
+const { encrypttheid, decodetheid } = require('../../helpers/encode-decode');
+const domainpath = process.env.REACT_APP_DOMAIN_ENDPOINT;
+
+var ModuleName = 'DASHBOARD';
+const AddFillTheBlanks = () => {
+  const [checked, setChecked] = useState(true);
+  const form = Form.useForm();
+  const params = useParams();
+  const ParamID = params?.id;
+  const questiontype_id = decodetheid(ParamID);
+  const [showsolutionvalue, setshowsolutionvalue] = useState(false);
+  const [skillsdataarray, setskillsdataarray] = useState();
+  const [Active, setActive] = useState(false);
+  const [isActive, setIsActive] = useState(false);
+  const [VimeoActive, setVimeoActive] = useState(false);
+  const [YoutubeActive, setYoutubeActive] = useState(false);
+  const [Mp4Active, setMp4Active] = useState(false);
+  const [topicsdataarray, settopicsdataarray] = useState();
+  const [tagsarraydata, settagsarraydata] = useState();
+  const [SectionData, setSectionData] = useState();
+  const [comprehensionData, setcomprehensionData] = useState();
+  const [ActiveDetails, setActiveDetails] = useState(false);
+  const [ActiveSetting, setActiveSetting] = useState(false);
+  const [Activesolution, setActivesolution] = useState(false);
+  const [ActiveAttachment, setActiveAttachment] = useState(false);
+  const [OptionValues, setOptionValues] = useState([]);
+  const [entityarray, setentityarray] = useState();
+  const [ShowAttachment, setShowAttachment] = useState(false);
+  const [exactanswer, setexactanswer] = useState({
+    key: '',
+    value: '',
+  });
+  const [videoType, setvideoType] = useState();
+  const [AttachemtType, setAttachemtType] = useState({
+    comprehension: false,
+    audio: false,
+    video: false,
+  });
+  const [AttachmentTypeValues, setAttachmentTypeValues] = useState({
+    value: '',
+    link: '',
+  });
+  const [ShowQuestionAttempt, setShowQuestionAttempt] = useState();
+  const [skills, setskills] = useState();
+  const [levelsData, setlevelsData] = useState();
+  const [QuestionId, setQuestionId] = useState();
+  const [QuestionAttempt, setQuestionAttempt] = useState({
+    Enable: false,
+    disable: false,
+  });
+
+  const [tabpane, settabpane] = useState({
+    Details: true,
+    Settings: false,
+    Solution: false,
+    Attachment: false,
+  });
+  const [formData, setformData] = useState({
+    question: '',
+    description: '',
+    acceptable_answer1: '',
+    acceptable_answer2: '',
+    skill: '',
+    level: '',
+    points: '',
+    question_time: '',
+    tags: '',
+    topic: '',
+    hint: '',
+    solution: '',
+    solution_video: '',
+    attachments: '',
+    section: '',
+  });
+  const [AnswerArray, setAnswerArray] = useState([]);
+
+  const [AnswerFieldsValue, setAnswerFieldsValue] = useState();
+  const showMessage = () => {
+    //Show message in alert()
+    var iframeBox = document.getElementById('iframeBox');
+    iframeBox.style.display = 'block';
+
+    var videoInput = document.getElementById('videolink_input');
+    console.log(videoInput.value);
+
+    var ytUrl = videoInput.value;
+    var ytUrl2 = videoInput.value;
+
+    var ytUrl2 = ytUrl.replace('/watch?v=', '/embed/');
+    var ytUrl3 = ytUrl2.replace('https://youtu.be/', 'https://www.youtube.com/embed/');
+
+    var youtubeIframe = document.getElementById('youtubeIframe');
+    var youtubeIframe2 = document.getElementById('youtubeIframe');
+    var setVideolink = youtubeIframe.setAttribute('src', ytUrl2);
+    var setVideolink2 = youtubeIframe2.setAttribute('src', ytUrl3);
+    console.log(setVideolink);
+
+    //setshowVideoBox(true);
+  };
+
+  useEffect(() => {
+    async function getallskills() {
+      const url = api_url.get_skills;
+      const response = await get_api_request(url, headers);
+      //console.log(response);
+      if (response.status == 200) {
+        const skillsdata = response?.data?.responsedata;
+        // console.log(skillsdata);
+        const skillsarray = skillsdata.map(items => {
+          //console.log(items);
+          return { id: items.id, name: items.skill_name };
+        });
+        setskillsdataarray(skillsarray);
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    getallskills();
+
+    async function getallTopics() {
+      const url = api_url.get_topics;
+      const response = await get_api_request(url, headers);
+
+      if (response.status == 200) {
+        const topicsdata = response?.data?.responsedata;
+
+        const topicsarray = topicsdata.map(items => {
+          return { id: items.id, name: items.topic_name };
+        });
+        settopicsdataarray(topicsarray);
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    getallTopics();
+
+    async function getallTags() {
+      const url = api_url.get_tags;
+      const response = await get_api_request(url, headers);
+      console.log(response);
+      if (response.status == 200) {
+        const tagsdata = response?.data?.responsedata;
+        // console.log(skillsdata);
+        const tagssarray = tagsdata.map(items => {
+          //console.log(items);
+          return { id: items.id, name: items.tag_name };
+        });
+        settagsarraydata(tagssarray);
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    getallTags();
+
+    async function getallCopmrehension() {
+      const url = api_url.comprehension_all;
+      const response = await get_api_request(url, headers);
+
+      if (response.status == 200) {
+        const comprehension = response?.data?.responsedata;
+
+        const comprehensionarray = comprehension.map(items => {
+          return { id: items.id, name: items.title };
+        });
+        setcomprehensionData(comprehensionarray);
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    getallCopmrehension();
+
+    async function get_entity_byid() {
+      const url = api_url.get_entity_byid + questiontype_id;
+      const response = await get_api_request(url, headers);
+      console.log(response);
+      if (response.status == 200) {
+        const entitydata = response?.data?.responsedata?.[0]?.name;
+        setentityarray(entitydata);
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    get_entity_byid();
+
+    async function getallSection() {
+      const url = api_url.get_section;
+      const response = await get_api_request(url, headers);
+      console.log(response);
+      if (response.status == 200) {
+        const Sectiondata = response?.data?.responsedata;
+        // console.log(skillsdata);
+        const Sectionsarray = Sectiondata.map(items => {
+          //console.log(items);
+          return { id: items.id, name: items.section_name };
+        });
+        setSectionData(Sectionsarray);
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    getallSection();
+
+    async function Getallmodules(data) {
+      const url = api_url.getall_modules;
+      const response = await get_api_request(url, data, headers);
+      //console.log(response);
+      if (response.status == 200) {
+        const Moduledata = response?.data?.responsedata?.modules;
+        const getmodules = Moduledata.map(items => {
+          // console.log(items);
+          if (items.name == 'Levels') {
+            const parentdata = items?.parent_id;
+            async function getentitybyparentid() {
+              const url = api_url.get_entity_byparentid + parentdata;
+              const response = await get_api_request(url, data, headers);
+              //console.log(response);
+              const questiontypedata = response?.data?.responsedata;
+              const levelarray = questiontypedata?.map(item => {
+                //console.log(item);
+                return { name: item.name, id: item.id };
+              });
+              setlevelsData(levelarray);
+            }
+
+            getentitybyparentid();
+          }
+        });
+      } else {
+        console.log('error');
+      }
+    }
+    Getallmodules();
+
+    setActiveDetails(true);
+    setActive(true);
+    setQuestionAttempt({
+      Enable: false,
+      disable: true,
+    });
+  }, []);
+
+  const handlevideotab = e => {
+    //console.log(e);
+    if (e == 1) {
+      setMp4Active(current => !current);
+      setYoutubeActive(false);
+      setVimeoActive(false);
+    } else if (e == 2) {
+      setYoutubeActive(current => !current);
+      setMp4Active(false);
+      setVimeoActive(false);
+    } else if (e == 3) {
+      setVimeoActive(current => !current);
+      setMp4Active(false);
+      setYoutubeActive(false);
+    }
+  };
+
+  const handleClick = e => {
+    console.log(e);
+
+    if (e == 1) {
+      setQuestionAttempt({
+        Enable: true,
+        disable: false,
+      });
+      setIsActive(current => !current);
+      setActive(false);
+    } else if (e == 2) {
+      setQuestionAttempt({
+        Enable: false,
+        disable: true,
+      });
+      setIsActive(false);
+      setActive(current => !current);
+    }
+  };
+
+  const handleclass = e => {
+    console.log(e);
+    if (e == 1) {
+      setActiveDetails(current => !current);
+      setActiveSetting(false);
+      setActivesolution(false);
+      setActiveAttachment(false);
+      //setActivesection(false);
+      settabpane({
+        Details: true,
+        Settings: false,
+        Section: false,
+        Questions: false,
+      });
+    } else if (e == 2) {
+      setActiveSetting(current => !current);
+      setActiveDetails(false);
+      setActivesolution(false);
+      setActiveAttachment(false);
+      settabpane({
+        Details: false,
+        Settings: true,
+        Solution: false,
+        Questions: false,
+      });
+    } else if (e == 3) {
+      setActivesolution(current => !current);
+      setActiveDetails(false);
+      setActiveSetting(false);
+      setActiveAttachment(false);
+      settabpane({
+        Details: false,
+        Settings: false,
+        Solution: true,
+        Attachment: false,
+      });
+    } else if (e == 4) {
+      setActiveAttachment(current => !current);
+      setActiveDetails(false);
+      setActiveSetting(false);
+      setActivesolution(false);
+      settabpane({
+        Details: false,
+        Settings: false,
+        Solution: false,
+        Attachment: true,
+      });
+    }
+  };
+
+  const handleswitch = e => {
+    console.log(e);
+    if (e == true) {
+      setshowsolutionvalue(true);
+    } else {
+      setshowsolutionvalue(false);
+    }
+  };
+
+  /**IMAGE SECTION=========================================================STARTS **/
+  const [Images, setImages] = useState([]);
+  const url = domainpath + '/images/logo';
+  const imageHandleChange = async e => {
+    var vfile;
+    vfile = e.target.files;
+    // // document.getElementsByClassName('question-editor').html.append('kkkkkkkkkkk');
+    // // document.getElementById('question-editor').innerHTML += '<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" contenteditable="false" draggable="true" width="200px"></img>';
+    // console.log(document.getElementsByClassName('question-editor'));
+    // const node = document.createElement('img');
+    // node.src = 'https://media.geeksforgeeks.org/wp-content/uploads/20190529122828/bs21.png';
+    // console.log(node);
+    // //  document.getElementsByClassName('question-editor').appendChild(node);
+    // var kk =
+    //   '<img src="https://www.simplilearn.com/ice9/free_resources_article_thumb/what_is_image_Processing.jpg" contenteditable="false" draggable="true" width="200px"></img>';
+    // //  setformData({ ...formData, questions: formData.questions + kk });
+    // // var idData = document.getElementsByClassName('question-editor').innerHTML;
+
+    // var singleimage = imageRender(vfile);
+
+    // setImages(singleimage);
+    await imageUploadSave(vfile, url)
+      .then(resp => {
+        var image = `<br /><img src=${resp} contenteditable="false" draggable="true" ></img>`;
+
+        setformData({ ...formData, description: formData?.description + image });
+        setShowAttachment(false);
+        // setImageURL(resp[0]);
+      })
+      .catch(error => {
+        notification.error({
+          message: error?.response?.data?.message,
+        });
+        console.log(error);
+      });
+  };
+  const renderPictures = source => {
+    return source.map(pictures => {
+      return <Image src={pictures} key={pictures} />;
+    });
+  };
+
+  const HandleImageWithInput = url => {
+    console.log(url);
+  };
+  /**IMAGE SECTION=========================================================ENDS **/
+
+  const CopyToClipboard = e => {
+    navigator.clipboard.writeText('Answer_' + e);
+    notification.success({
+      message: `Copied Successfully ${'Answer_' + e}`,
+    });
+  };
+  const AddAnswerValue = () => {
+    console.log(AnswerFieldsValue);
+    setAnswerArray([
+      ...AnswerArray,
+      {
+        table: '',
+        image: '',
+        answer: AnswerFieldsValue,
+      },
+    ]);
+    setAnswerFieldsValue();
+  };
+
+  const RemoveAnswerRow = index => {
+    const FilterAnswer = [...AnswerArray];
+    delete FilterAnswer[index];
+    var finalArr = [];
+    FilterAnswer.map(item => {
+      finalArr.push(item);
+    });
+    console.log(finalArr);
+    setAnswerArray(finalArr);
+  };
+
+  const handlesubmit = (fieldsValue, name) => {
+    var AnswerDataArray = [];
+    if (AnswerArray.length > 0) {
+      AnswerArray?.map((item, i) => {
+        var data = {
+          id: i,
+          answer: item?.answer,
+        };
+        AnswerDataArray.push(data);
+      });
+      setAnswerArray(AnswerDataArray);
+      console.log(AnswerDataArray);
+      if (skills) {
+        var meta = {};
+        var payload = {
+          questions: (formData?.question).replaceAll('"', "'"),
+          description: formData?.description,
+          options: AnswerDataArray,
+          skill: formData?.skill,
+          answers: AnswerDataArray,
+        };
+        meta = {
+          topic: fieldsValue?.topic,
+          tags: fieldsValue?.tags,
+          difficulty_level: fieldsValue?.difficulty_level,
+          QuestionAttempt: QuestionAttempt,
+        };
+        payload['meta'] = meta;
+      } else {
+        var payload = {
+          type: questiontype_id,
+          questions: (formData?.question).replaceAll('"', "'"),
+          description: formData?.description,
+          options: AnswerDataArray,
+          skill: formData?.skill,
+          answers: AnswerDataArray,
+        };
+      }
+      console.log(payload);
+      if (skills) {
+        async function updatesinglequestion() {
+          const url = api_url.get_questions_by_id + QuestionId;
+          const response = await put_api_request(url, payload, headers);
+          console.log(response);
+          if (response.status == 201) {
+            notification.success({ message: 'Question updated Sucessfully!' });
+          } else {
+            notification.error({ message: response?.message });
+          }
+        }
+        updatesinglequestion();
+      } else {
+        async function createsinglequestion() {
+          const url = api_url.create_questions;
+          const response = await post_api_request(url, payload, headers);
+          console.log(response);
+          if (response.status == 201) {
+            notification.success({ message: 'Question Created Sucessfully!' });
+            const responseid = response?.data?.id;
+            setQuestionId(responseid);
+
+            async function getQuestionbyid() {
+              const url = api_url.get_questions_by_id + responseid;
+              const response = await get_api_request(url, headers);
+              if (response.status == 200) {
+                const questiondata = response?.data?.responsedata?.[0];
+                console.log(questiondata);
+                // const skillid = questiondata?.skill_id;
+                setskills(questiondata);
+                //         setformData({
+                //           question:questiondata?.question ,
+                // option1: questiondata?.option1,
+                // option2: questiondata?.option2,
+                // skill: questiondata?.option2,
+                //         })
+              } else {
+                notification.error({ message: 'Something went wrong' });
+              }
+            }
+            getQuestionbyid();
+            if (name == 'details') {
+              setActiveSetting(current => !current);
+              setActiveDetails(false);
+              setActivesolution(false);
+              setActiveAttachment(false);
+              settabpane({
+                Details: false,
+                Settings: true,
+                Solution: false,
+                Questions: false,
+              });
+            }
+          } else if (response.status == 200) {
+            notification.error({ message: response?.data?.message });
+          }
+        }
+        createsinglequestion();
+      }
+    } else {
+      notification.error({ message: 'Fill The Correct Answer' });
+    }
+  };
+  var active;
+  const HandleSettingTab = name => {
+    if (formData.active == true) {
+      active = 1;
+    } else {
+      active = 0;
+    }
+    var settingspayload = {
+      skill: skills?.skill_id,
+      questions: skills?.questions,
+      description: skills?.description,
+      options: skills?.options,
+      answers: AnswerArray,
+      topic: formData?.topic,
+      active: active,
+      section: formData?.section,
+      difficulty_level: formData?.level,
+    };
+    var meta = {
+      id: QuestionId,
+      level: formData?.level,
+      points: formData?.points,
+      question_time: formData?.question_time,
+      tags: formData?.tags,
+    };
+    settingspayload['meta'] = meta;
+    console.log(settingspayload);
+    async function UpdateQuestionbyid() {
+      const url = api_url.get_questions_by_id + QuestionId;
+      const response = await put_api_request(url, settingspayload, headers);
+      console.log(response);
+      if (response.status == 201) {
+        const metadata = response?.data?.responsedata;
+        // setMetaId(metadata);
+        notification.success({ message: 'Question Updated Sucessfully!' });
+        if (name == 'settings') {
+          setActivesolution(current => !current);
+          setActiveDetails(false);
+          setActiveSetting(false);
+          setActiveAttachment(false);
+          settabpane({
+            Details: false,
+            Settings: false,
+            Solution: true,
+            Attachment: false,
+          });
+        }
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    UpdateQuestionbyid();
+  };
+
+  const HandleSolutionTab = name => {
+    var settingspayload = {
+      skill: skills?.skill_id,
+      questions: skills?.questions,
+      description: skills?.description,
+      options: skills?.options,
+      answers: AnswerArray,
+    };
+    var meta = {
+      id: QuestionId,
+      solution: formData?.solution,
+      hint: formData?.hint,
+      video_link: formData?.video_link,
+      tags: formData?.tags,
+      topic: formData?.topic,
+      active: formData?.active,
+      videoType: videoType,
+      showsolutionvalue: showsolutionvalue,
+    };
+
+    settingspayload['meta'] = meta;
+    console.log(meta);
+    console.log(settingspayload);
+    async function UpdateSolutionbyid() {
+      const url = api_url.get_questions_by_id + QuestionId;
+      const response = await put_api_request(url, settingspayload, headers);
+      console.log(response);
+      if (response.status == 201) {
+        const metadata = response?.data?.responsedata;
+        // setMetaId(metadata);
+        notification.success({ message: 'Question Updated Sucessfully!' });
+        if (name == 'solution') {
+          setActiveAttachment(current => !current);
+          setActiveDetails(false);
+          setActiveSetting(false);
+          setActivesolution(false);
+          settabpane({
+            Details: false,
+            Settings: false,
+            Solution: false,
+            Attachment: true,
+          });
+        }
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    UpdateSolutionbyid();
+  };
+
+  const HandleAttachment = name => {
+    var attachmentpayload = {
+      id: QuestionId,
+      skill: skills?.skill_id,
+      questions: skills?.questions,
+      description: skills?.description,
+      options: skills?.options,
+      answers: AnswerArray,
+    };
+    var meta = {
+      id: QuestionId,
+      attachment_type: ShowQuestionAttempt,
+      AttachmentTypeValues: AttachmentTypeValues?.value,
+      AttachmentTypeLink: AttachmentTypeValues?.link,
+      AttachemtType: AttachemtType,
+      QuestionAttempt: QuestionAttempt,
+    };
+    attachmentpayload['meta'] = meta;
+    console.log(meta);
+    async function UpdateSolutionbyid(data) {
+      console.log(data);
+      const url = api_url.get_questions_by_id + QuestionId;
+      const response = await put_api_request(url, data, headers);
+      console.log(response);
+      if (response.status == 201) {
+        const metadata = response?.data?.responsedata;
+        //setMetaId(metadata);
+        notification.success({ message: 'Question Updated Sucessfully!' });
+      } else {
+        notification.error({ message: response?.message });
+      }
+    }
+    UpdateSolutionbyid(attachmentpayload);
+  };
+
+  return (
+    <>
+      <Main>
+        <Form name="sDash_validation-form" Form={form}>
+          <section className="SectionTabsMainTop">
+            <Cards>
+              <div className="SectionTabs_Main">
+                <div id="SectionTabsGeneral" className="SectionTabsInner">
+                  {tabpane?.Details == true ? (
+                    <p className="header_text" style={{ width: '100%' }}>
+                      <b>Question Details</b>
+                      <br />
+                      {entityarray}
+                    </p>
+                  ) : tabpane?.Settings == true ? (
+                    <p style={{ width: '100%' }}>
+                      <b>Question Settings </b>
+                      <br />
+                      {entityarray}
+                    </p>
+                  ) : tabpane?.Solution == true ? (
+                    <p style={{ width: '100%' }}>
+                      <b>Question Solution </b>
+                      <br />
+                      {entityarray}
+                    </p>
+                  ) : tabpane?.Attachment == true ? (
+                    <p style={{ width: '100%' }}>
+                      <b>Question Attachment </b>
+                      <br />
+                      {entityarray}
+                    </p>
+                  ) : (
+                    ''
+                  )}
+
+                  <button
+                    value={1}
+                    className={ActiveDetails ? 'practice-tabpane' : ''}
+                    onClick={e => handleclass(e.target.value)}
+                  >
+                    <span>1</span> Details
+                  </button>
+                  <button
+                    value={2}
+                    className={ActiveSetting ? 'practice-tabpane' : ''}
+                    onClick={e => (QuestionId ? handleclass(e.target.value) : '')}
+                  >
+                    <span>2</span> Settings
+                  </button>
+                  <button
+                    value={3}
+                    className={Activesolution ? 'practice-tabpane' : ''}
+                    onClick={e => (QuestionId ? handleclass(e.target.value) : '')}
+                  >
+                    <span>3</span> Solution
+                  </button>
+                  <button
+                    value={4}
+                    className={ActiveAttachment ? 'practice-tabpane' : ''}
+                    onClick={e => (QuestionId ? handleclass(e.target.value) : '')}
+                  >
+                    <span>4</span> Attachment
+                  </button>
+                </div>
+              </div>
+            </Cards>
+            {tabpane?.Details == true ? (
+              <Cards>
+                <Row gutter={30} className="skillrow mb-space">
+                  <Col md={18} xs={24} className="skillrow-inner">
+                    <Form.Item name="skill" label="Skill" rules={[{ required: true, message: 'Skills required!' }]}>
+                      {/* <label>Skills</label> */}
+                      <Select
+                        onChange={selectedValue => {
+                          setformData({ ...formData, skill: selectedValue });
+                        }}
+                      >
+                        {skillsdataarray?.map(item => (
+                          <Option id={item?.id} value={item?.id}>
+                            {item.name}
+                          </Option>
+                        ))}
+                      </Select>
+                    </Form.Item>
+
+                    <Form.Item
+                      name="question"
+                      label="Title"
+                      initialValue={formData.question}
+                      rules={[{ required: true, message: 'Question is required!' }]}
+                    >
+                      <Input
+                        value={formData.question}
+                        onChange={selectedValue => {
+                          setformData({ ...formData, question: selectedValue.target.value });
+                        }}
+                      />
+                    </Form.Item>
+
+                    {ShowAttachment == true ? (
+                      <div className="modal-details-fade que-instert-img">
+                        <div className="modal-details">
+                          <FeatherIcon className="closemodal" icon="x" onClick={() => setShowAttachment(false)} />
+                          <h3>Insert Image</h3>
+                          <div style={{ borderBottom: '1px solid #d2d2d2', margin: '12px 0 20px 0' }}></div>
+                          <Col md={24} xs={24}>
+                            <Form.Item
+                              label="Image"
+                              rules={[
+                                {
+                                  required: false,
+                                  message: 'Please select Store Featured Image!',
+                                },
+                              ]}
+                            >
+                              <Input name="images" type="file" onChange={e => imageHandleChange(e)} />
+                              {/* <div className="checkURL">
+                                  <Input placeholder="Image URL" /> <FeatherIcon icon="check-circle" />
+                                  <i data-feather="image"></i>
+                                </div> */}
+                            </Form.Item>
+                          </Col>
+                        </div>
+                      </div>
+                    ) : (
+                      ''
+                    )}
+                    <Form.Item name="description" label="Description">
+                      <div className="gallerydescription ckeditorgalleryimage">
+                        <button
+                          title="Insert image"
+                          type="button"
+                          class="k-button k-button-md k-button-solid k-button-solid-base k-rounded-md k-icon-button k-group-end"
+                          tabindex="-1"
+                          onClick={() => setShowAttachment(!ShowAttachment)}
+                        >
+                          <span role="presentation" class="k-button-icon k-icon k-i-image"></span>
+                        </button>
+                      </div>
+                      <div className="result qst-render-image" style={{ width: '20vh' }}>
+                        {renderPictures(Images)}
+                      </div>
+                      <CKEditor
+                        editor={ClassicEditor}
+                        contentStyle={{
+                          height: 430,
+                        }}
+                        config={{
+                          toolbar: {
+                            shouldNotGroupWhenFull: true,
+                            items: [
+                              'heading',
+
+                              'outdent',
+                              'indent',
+                              '|',
+                              'bold',
+                              'italic',
+                              'link',
+                              'bulletedList',
+                              'numberedList',
+                              'imageUpload',
+                              'mediaEmbed',
+                              'insertTable',
+                              'blockQuote',
+                              'undo',
+                              'redo',
+                              '|',
+                              'MathType',
+                              'ChemType',
+                            ],
+                          },
+                        }}
+                        data={formData.description}
+                        onReady={editor => {
+                          // You can store the "editor" and use when it is needed.
+                          // console.log( 'Editor is ready to use!', editor );
+                        }}
+                        onChange={(event, editor) => {
+                          const data = editor.getData();
+                          // console.log(data, '00000000000000000000');
+                          //  setCkData(data);
+                          setformData({ ...formData, description: data });
+                        }}
+                      />
+                      {/* <Editor
+                        name="description"
+                        id="question-editor"
+                        value={formData.description}
+                        className="question-editor"
+                        tools={[
+                          [Bold, Italic, Underline, Strikethrough],
+                          [Subscript, Superscript],
+                          [OrderedList, UnorderedList],
+                          [InsertTable, InsertImage],
+                        ]}
+                        contentStyle={{
+                          height: 430,
+                        }}
+                        onChange={selectedValue => {
+                          // setformData({ ...formData, description: selectedValue.html.replace(/(<([^>]+)>)/gi, '') });
+                          setformData({ ...formData, description: selectedValue.html });
+                        }}
+                      /> */}
+                    </Form.Item>
+
+                    {/* <Form.Item
+                      name="question"
+                      label="Question"
+                      rules={[{ required: true, message: 'Question required!' }]}
+                    >
+                   
+                      <Editor
+                        value={formData?.question}
+                        tools={[
+                          [Bold, Italic, Underline, Strikethrough],
+                          [Subscript, Superscript],
+                          [OrderedList, UnorderedList],
+                          [InsertTable, InsertImage],
+                        ]}
+                        contentStyle={{
+                          height: 200,
+                        }}
+                        onChange={e => setformData({ ...formData, question: e.html })}
+                      />
+                    </Form.Item> */}
+                  </Col>
+                  <br />
+                </Row>
+                <br />
+                <Col md={18} xs={24} className="skillrow-inner">
+                  <Input
+                    className="filltheblank-inputfiled"
+                    type="text"
+                    value={AnswerFieldsValue}
+                    // onChange={e => HandleAddOptionValue(e, i, 'answer')}
+                    onChange={e => setAnswerFieldsValue(e.target.value)}
+                  />
+                  <Button type="success" className="add-answer" onClick={() => AddAnswerValue()}>
+                    Add
+                  </Button>
+                </Col>
+
+                <div className="answerfillintheblank">
+                  {AnswerArray?.map((item, i) => (
+                    <>
+                      <div className="answerfill-inner">
+                        {/* <Input
+                          type="text"
+                          value={item['answer']}
+                          onChange={e => HandleAddOptionValue(e, i, 'answer')}
+                        />
+                        <Button type="primary" className="copy-answer" onClick={e => CopyToClipboard(i)}>
+                          Copy
+                        </Button> */}
+                        {/* <p onClick={e => CopyToClipboard(i)}>{item['answer']}</p> */}
+                        <p
+                          onClick={() => CopyToClipboard(i)}
+                          //className="copytoclipboart-filltheblank"
+                          style={{
+                            background: '#2196F3',
+                            display: 'inline-flex',
+                            alignItems: 'center',
+                            flexGrow: 0,
+                            marginRight: '13%',
+                            color: 'white',
+                            cursor: 'pointer',
+                          }}
+                        >
+                          <i class="fa fa-files-o" aria-hidden="true"></i> {item['answer']}
+                        </p>
+                        <a onClick={() => RemoveAnswerRow(i)}>X</a>
+                      </div>
+                    </>
+                  ))}
+                </div>
+                <br />
+
+                <div className="form-group">
+                  <Button
+                    htmlType="submit"
+                    type="success"
+                    style={{ float: 'right', marginRight: '12px', marginTop: '5px' }}
+                    onClick={e => handlesubmit(e, 'details')}
+                  >
+                    Save Details
+                  </Button>
+                </div>
+              </Cards>
+            ) : tabpane?.Settings == true ? (
+              <>
+                <Cards>
+                  <div className="settingstab">
+                    <Row gutter={30}>
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Skill</label>
+                        <Form.Item name="skill">
+                          <Select
+                            onChange={selectedValue => {
+                              setformData({ ...formData, skill: selectedValue });
+                            }}
+                            disabled
+                          >
+                            {skillsdataarray?.map(item => (
+                              <Option value={item?.id}>{item.name}</Option>
+                            ))}
+                          </Select>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Section</label>
+                        <Form.Item name="section">
+                          <Select
+                            onChange={selectedValue => {
+                              setformData({ ...formData, section: selectedValue });
+                            }}
+                          >
+                            {SectionData?.map(item => (
+                              <Option value={item.id}>{item.name}</Option>
+                            ))}
+                          </Select>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Topic</label>
+                        <Form.Item name="topic">
+                          <Select
+                            onChange={selectedValue => {
+                              setformData({ ...formData, topic: selectedValue });
+                            }}
+                          >
+                            {topicsdataarray?.map(item => (
+                              <Option value={item?.id}>{item.name}</Option>
+                            ))}
+                          </Select>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Tags</label>
+                        <Form.Item name="tags">
+                          <Select
+                            mode="multiple"
+                            onChange={selectedValue => {
+                              setformData({ ...formData, tags: selectedValue });
+                            }}
+                          >
+                            {tagsarraydata?.map(item => (
+                              <Option value={item?.id}>{item.name}</Option>
+                            ))}
+                          </Select>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Difficulty Level</label>
+                        <Form.Item name="level">
+                          <Select
+                            onChange={selectedValue => {
+                              setformData({ ...formData, level: selectedValue });
+                            }}
+                          >
+                            {levelsData?.map(item => (
+                              <Option value={item.id}>{item.name}</Option>
+                            ))}
+                          </Select>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Default Marks/Grade Points</label>
+                        <Form.Item name="points">
+                          <Input
+                            type="number"
+                            //defaultValue="1"
+                            onChange={selectedValue => {
+                              setformData({ ...formData, points: selectedValue.target.value });
+                            }}
+                          ></Input>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>Default Time To Solve (Seconds)</label>
+                        <Form.Item name="question_time">
+                          <Input
+                            type="number"
+                            // defaultValue="60"
+                            onChange={selectedValue => {
+                              setformData({ ...formData, question_time: selectedValue.target.value });
+                            }}
+                          ></Input>
+                        </Form.Item>
+                      </Col>
+
+                      <Col md={18} xs={24} className="skillrow-inner">
+                        <label>
+                          Active
+                          <br />
+                          &nbsp; &nbsp; Active (Shown Everywhere). In-active (Hidden Everywhere).
+                        </label>
+                        <Form.Item name="active">
+                          <Switch
+                            className="pull-right"
+                            checked={formData?.active}
+                            onChange={selectedValue => {
+                              setformData({ ...formData, active: selectedValue });
+                            }}
+                          ></Switch>
+                        </Form.Item>
+                      </Col>
+                    </Row>
+                    <Button
+                      className="pull-right"
+                      style={{ color: '#fff', background: '#000' }}
+                      onClick={e => (QuestionId ? HandleSettingTab('settings', e) : '')}
+                    >
+                      Update Settings
+                    </Button>
+                  </div>
+                </Cards>
+              </>
+            ) : tabpane?.Solution == true ? (
+              <>
+                <Cards>
+                  <Col md={18} xs={24} className="skillrow-inner">
+                    <Form.Item name="solution">
+                      <label>Solution</label>
+                      <Editor
+                        value={formData?.solution}
+                        tools={[
+                          [Bold, Italic, Underline, Strikethrough],
+                          [Subscript, Superscript],
+                          [OrderedList, UnorderedList],
+                          [InsertTable, InsertImage],
+                        ]}
+                        contentStyle={{
+                          height: 430,
+                        }}
+                        onChange={e => setformData({ ...formData, solution: e.html })}
+                        // className="k-icon k-i-loading"
+                        // defaultContent={cssvalue}
+                        // onChange={handleCSS}
+                      />
+                    </Form.Item>
+                  </Col>
+                  <Col md={18} xs={24} className="skillrow-inner">
+                    <Form.Item name="solution_video">
+                      <label>Enable Solution Video</label>
+                      <br />
+                      <Space direction="vertical">
+                        <Switch
+                          checked={showsolutionvalue}
+                          checkedChildren="Yes"
+                          unCheckedChildren="No"
+                          onChange={e => handleswitch(e)}
+                        ></Switch>
+                      </Space>
+                    </Form.Item>
+                  </Col>
+                  {showsolutionvalue == true ? (
+                    <Col md={18} xs={24} style={{ padding: 'inherit' }}>
+                      <div className="video_buttons">
+                        <button
+                          value={1}
+                          className={Mp4Active ? 'bg-salmon' : ''}
+                          onClick={e => {
+                            handlevideotab(e.target.value);
+                            setvideoType('MP4 Video');
+                          }}
+                        >
+                          MP4 Video
+                        </button>
+                        <button
+                          value={2}
+                          className={YoutubeActive ? 'bg-salmon' : ''}
+                          onClick={e => {
+                            handlevideotab(e.target.value);
+                            setvideoType('YouTube Video');
+                          }}
+                        >
+                          YouTube Video
+                        </button>
+                        <button
+                          value={3}
+                          className={VimeoActive ? 'bg-salmon' : ''}
+                          onClick={e => {
+                            handlevideotab(e.target.value);
+                            setvideoType('Vimeo Video');
+                          }}
+                        >
+                          Vimeo Video
+                        </button>
+                      </div>
+                      <Input
+                        className="videolink_input"
+                        type="text"
+                        placeholder="Enter Your Video Link"
+                        defaultValue={formData?.video_link}
+                        onChange={e => setformData({ ...formData, video_link: e.target.value })}
+                      ></Input>
+                      <Button type="dark" style={{ display: 'initial' }} className="videopreview">
+                        {' '}
+                        <FeatherIcon size={17} icon="play" />
+                        Preview
+                      </Button>
+                    </Col>
+                  ) : (
+                    ''
+                  )}
+
+                  <Col md={18} xs={24} className="skillrow-inner">
+                    <Form.Item name="hint">
+                      <label>Hint</label>
+                      <Editor
+                        value={formData?.hint}
+                        tools={[
+                          [Bold, Italic, Underline, Strikethrough],
+                          [Subscript, Superscript],
+                          [OrderedList, UnorderedList],
+                          [InsertTable, InsertImage],
+                        ]}
+                        contentStyle={{
+                          height: 430,
+                        }}
+                        onChange={e => setformData({ ...formData, hint: e.html })}
+                        // className="k-icon k-i-loading"
+                        // defaultContent={cssvalue}
+                        // onChange={handleCSS}
+                      />
+                    </Form.Item>
+                  </Col>
+                  <Button
+                    className="pull-right"
+                    style={{ color: '#fff', background: '#000' }}
+                    onClick={() => HandleSolutionTab('solution')}
+                  >
+                    Update
+                  </Button>
+                </Cards>
+              </>
+            ) : tabpane?.Attachment == true ? (
+              <>
+                <Cards>
+                  <Col md={18} xs={24} style={{ padding: '0px' }}>
+                    <label>
+                      <b>Enable Question Attachment</b>
+                    </label>
+                    <div className="video_buttons">
+                      <button
+                        value={1}
+                        className={isActive ? 'bg-salmon' : ''}
+                        onClick={e => handleClick(e.target.value)}
+                      >
+                        Yes
+                      </button>
+                      <button
+                        value={2}
+                        id="No"
+                        className={Active ? 'bg-salmon' : ''}
+                        onClick={e => handleClick(e.target.value)}
+                      >
+                        No
+                      </button>
+                    </div>
+                    {isActive == 1 ? (
+                      <Form.Item name="attachments">
+                        <label>
+                          <b>Attachment Type</b>
+                        </label>
+                        <div className="attachment_type">
+                          <Input
+                            name="radio_attachment"
+                            className="attachment_radio"
+                            type="radio"
+                            checked={AttachemtType?.comprehension}
+                            onClick={e => {
+                              // HandleAttachmentRadioButton('Comprehension')
+                              setShowQuestionAttempt('Comprehension');
+                              setAttachemtType({
+                                comprehension: true,
+                                audio: false,
+                                video: false,
+                              });
+                            }}
+                          ></Input>
+                          <label>Comprehension Passage</label>
+
+                          <Input
+                            name="radio_attachment"
+                            className="attachment_radio left"
+                            type="radio"
+                            checked={AttachemtType?.audio}
+                            onClick={e => {
+                              // HandleAttachmentRadioButton('Audio')
+                              setShowQuestionAttempt('Audio');
+                              setAttachemtType({
+                                comprehension: false,
+                                audio: true,
+                                video: false,
+                              });
+                            }}
+                          ></Input>
+                          <label>Audio</label>
+
+                          <Input
+                            name="radio_attachment"
+                            className="attachment_radio left"
+                            type="radio"
+                            checked={AttachemtType?.video}
+                            onClick={e => {
+                              //HandleAttachmentRadioButton('Video')
+                              setShowQuestionAttempt('Video');
+                              setAttachemtType({
+                                comprehension: false,
+                                audio: false,
+                                video: true,
+                              });
+                            }}
+                          ></Input>
+                          <label>Video</label>
+                        </div>
+                      </Form.Item>
+                    ) : (
+                      ''
+                    )}
+                    {QuestionAttempt?.Enable == true ? (
+                      <>
+                        {ShowQuestionAttempt == 'Comprehension' ? (
+                          <Select
+                            style={{ width: '100%' }}
+                            classNamePrefix="select"
+                            isSearchable={true}
+                            comprehensionData={comprehensionData}
+                            //onSelect={GetPosition}
+                            onClick={e => {
+                              setAttachmentTypeValues({ ...AttachmentTypeValues, value: e });
+                            }}
+                          >
+                            {comprehensionData != null
+                              ? comprehensionData.map((item, index) => <Option value={item.id}>{item.name} </Option>)
+                              : ''}
+                          </Select>
+                        ) : (
+                          ''
+                        )}
+                        {ShowQuestionAttempt == 'Audio' ? (
+                          <Col md={18} xs={24} className="skillrow-inner">
+                            <div className="video_buttons">
+                              <button
+                                value={1}
+                                className={Mp4Active ? 'bg-salmon' : ''}
+                                onClick={e => {
+                                  handlevideotab(e.target.value);
+                                  setAttachmentTypeValues({ ...AttachmentTypeValues, value: 'MP3 Format' });
+                                }}
+                              >
+                                MP3 Format
+                              </button>
+                              <button
+                                value={2}
+                                className={YoutubeActive ? 'bg-salmon' : ''}
+                                onClick={e => {
+                                  handlevideotab(e.target.value);
+                                  setAttachmentTypeValues({ ...AttachmentTypeValues, value: 'OTT Format' });
+                                }}
+                              >
+                                OTT Format
+                              </button>
+                            </div>
+
+                            <Input
+                              className="videolink_input"
+                              type="text"
+                              placeholder="Enter Your Video Link"
+                              defaultValue={AttachmentTypeValues?.link}
+                              onChange={e => {
+                                setAttachmentTypeValues({ ...AttachmentTypeValues, link: e.target.value });
+                              }}
+                            ></Input>
+                            <Button className="videopreview">
+                              {' '}
+                              <FeatherIcon size={17} icon="play" />
+                              Preview
+                            </Button>
+                          </Col>
+                        ) : (
+                          ''
+                        )}
+                        {ShowQuestionAttempt == 'Video' ? (
+                          <Col md={18} xs={24} className="skillrow-inner">
+                            <div className="video_buttons">
+                              <button
+                                value={1}
+                                className={Mp4Active ? 'bg-salmon' : ''}
+                                onClick={e => {
+                                  handlevideotab(e.target.value);
+                                  setAttachmentTypeValues({ ...AttachmentTypeValues, value: 'MP4 Video' });
+                                }}
+                              >
+                                MP4 Video
+                              </button>
+                              <button
+                                value={2}
+                                className={YoutubeActive ? 'bg-salmon' : ''}
+                                onClick={e => {
+                                  handlevideotab(e.target.value);
+                                  setAttachmentTypeValues({ ...AttachmentTypeValues, value: 'YouTube Video' });
+                                }}
+                              >
+                                YouTube Video
+                              </button>
+                              <button
+                                value={3}
+                                className={VimeoActive ? 'bg-salmon' : ''}
+                                onClick={e => {
+                                  handlevideotab(e.target.value);
+                                  setAttachmentTypeValues({ ...AttachmentTypeValues, value: 'Vimeo Video' });
+                                }}
+                              >
+                                Vimeo Video
+                              </button>
+                            </div>
+
+                            <Input
+                              className="videolink_input"
+                              type="text"
+                              placeholder="Enter Your Video Link"
+                              defaultValue={AttachmentTypeValues?.link}
+                              onChange={e => {
+                                setAttachmentTypeValues({ ...AttachmentTypeValues, link: e.target.value });
+                              }}
+                            ></Input>
+                            <Button className="videopreview">
+                              {' '}
+                              <FeatherIcon size={17} icon="play" />
+                              Preview
+                            </Button>
+                          </Col>
+                        ) : (
+                          ''
+                        )}
+                      </>
+                    ) : (
+                      ''
+                    )}
+                  </Col>
+
+                  <Button
+                    style={{ color: '#fff', background: '#000' }}
+                    className="pull-right"
+                    onClick={HandleAttachment}
+                  >
+                    Update
+                  </Button>
+                </Cards>
+              </>
+            ) : (
+              ''
+            )}
+          </section>
+        </Form>
+      </Main>
+    </>
+  );
+};
+export default AddFillTheBlanks;

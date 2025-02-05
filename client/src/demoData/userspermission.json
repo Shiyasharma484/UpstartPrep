@@ -1,0 +1,51 @@
+[
+    {
+        "userRole": "Dashboard"
+    },
+    {
+        "userRole": "Users"
+    },
+    {
+        "userRole": "Stores"
+    },
+    {
+        "userRole": "Orders"   
+    },
+    {
+        "userRole": "Payment"
+    },
+    {
+        "userRole": "Invoices"
+    },
+    {
+        "userRole": "Products"
+    },
+    {
+        "userRole": "Categories"
+    },
+    {
+        "userRole": "Reports"
+    },
+    {
+        "userRole": "Settings"
+    },
+    {
+        "userRole": "Store Modules"
+    },
+    {
+        "userRole": "Subscription"
+    },
+    {
+        "userRole": "Customers"
+    },
+    {
+        "userRole": "Delivery Partners"
+    },
+    {
+        "userRole": "Tickets"
+    },
+    {
+        "userRole": "Offers"
+    }
+
+]

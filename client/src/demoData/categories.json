@@ -1,0 +1,42 @@
+[
+    {
+        "category": "Thali",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "Pizza",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "Ice Cream",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "Chocolate",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "South Indian Food",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "Chinese Food",
+        "status": "Active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "Italian Food",
+        "status": "In active",
+        "store": "Restaurant"
+    },
+    {
+        "category": "Indian Food",
+        "status": "Active",
+        "store": "Restaurant"
+    }
+]

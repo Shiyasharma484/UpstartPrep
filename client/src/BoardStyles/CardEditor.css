@@ -1,0 +1,29 @@
+.Edit-Card .Card {
+  min-height: 50px;
+  padding-left: 8px;
+  padding-right: 15px;
+}
+
+.Edit-Card .Card:hover {
+  background: white;
+}
+
+.Edit-Card-Textarea {
+  width: 100%;
+  border: none;
+  resize: none;
+  outline: none;
+  font-size: 15px;
+}
+.AddPinDesign .Edit-Card .Card {
+  background: transparent;
+  padding: 0;
+}
+.AddPinDesign .Edit-Card .Card textarea {
+  padding: 30px 10px 20px 10px;
+  border-radius: 5px;
+  margin: 10px 0 10px 0;
+}
+.AddPinDesign .Toggle-Add-Card {
+  width: 100%;
+}

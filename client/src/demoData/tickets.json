@@ -1,0 +1,98 @@
+[
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Pending",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Pending",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Pending",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Pending",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Resolved",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    },
+    {
+        "ticketNo": "#0F-0003",
+        "orderId": "#01-0001",
+        "customerName": "Kellie Marquot",
+        "status": "Pending",
+        "date": "January 20, 2020",
+        "assignedTo": "Marry Backhom"
+    }
+]
